@@ -1,0 +1,12 @@
+{
+  "name": "traning-takeda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/nsc-kiwamu/traning-takeda.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  }
+}
