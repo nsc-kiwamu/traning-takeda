@@ -42,11 +42,11 @@ else {
 // 「私は小学生未満です」と表示
 const sampleage: number = 10
 if (sampleage < 6) {
-    console.log(`私は小学生未満です`)
-} else if (6 <= sampleage && sampleage < 13) {
+    console.log(`私は小学生未満です`) // ６歳以下ならば
+} else if (6 <= sampleage && sampleage < 13) { // ６歳以上13歳未満であれば
     console.log(`私は小学生です`)
 }else {
-    console.log(`私は小学生以上です`)
+    console.log(`私は小学生以上です`) //それ以上ならば
 }
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
