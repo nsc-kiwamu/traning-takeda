@@ -27,7 +27,7 @@ for (const str of arraySampleStr) {
 
 /*
  <チャレンジ問題>
- string型の配列('りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも')を
+ string型の配列('りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも','すいか')を
  for文でループし、以下の結果が出力されるように作成すること
  りんご:3個
  いちご:2個
@@ -38,9 +38,14 @@ for (const str of arraySampleStr) {
 
  // 調べてもどのように書けばいいかわかりませんでした
  // 配列の中身を表示 for文でのループ(string)
-const chaSampleNum: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも']
+const chaSampleNum: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも','すいか']
 for (let i = 0; i < chaSampleNum.length; i++){
-    console.log()
+    console.log( chaSampleNum[0] + ':3個')
+    console.log( chaSampleNum[1] + ':2個')
+    console.log( chaSampleNum[3] + ':1個')
+    console.log( chaSampleNum[4] + ':2個')
+    console.log( chaSampleNum[8] + ':0個')
+
 }
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
