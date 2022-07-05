@@ -6,8 +6,28 @@
  以下が出力されるように作成すること
  1～100の加算結果は5050です
  1～10の奇数の加算結果は25です
+*/
 
- <チャレンジ問題>
+// 
+let sampleadd: number = 0
+for (let i = 0; i <= 10; i++) {
+    sampleadd += 1
+}
+console.log(`1～10の加算結果は${sampleadd}です`)
+
+
+// 1～10の偶数のみを加算
+sampleadd = 0
+for (let i = 0; i <= 10; i++) {
+    if (i % 2 !== 0) {
+        continue
+    }
+    sampleadd += i
+}
+console.log(`1～10の偶数の加算結果は${sampleadd}です`)
+
+
+/* <チャレンジ問題>
  上記ができたら以下が出力されるように作成すること
 
  ・条件
@@ -33,4 +53,9 @@
  13
  14
  FizzBuzz
+ */
+
+ /*※1 「Ctrl + @」でターミナルを開き以下を実行
+  yarn tsc 
+  node dist/traning03/Practice03.js
  */
