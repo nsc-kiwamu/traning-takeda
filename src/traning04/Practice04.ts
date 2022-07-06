@@ -39,27 +39,28 @@ for (const str of arraySampleStr) {
  // 調べてもどのように書けばいいかわかりませんでした
  // 配列の中身を表示 for文でのループ(string)
 const chaSampleStr: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも','すいか']
-let chaSampleNum01: number = 3 // りんご
-let chaSampleNum02: number = 2 // いちご
-let chaSampleNum03: number = 1 // ぶどう
-let chaSampleNum04: number = 2 // もも
+let chaSampleNum01: number = 0 // りんご
+let chaSampleNum02: number = 0 // いちご
+let chaSampleNum03: number = 0 // ぶどう
+let chaSampleNum04: number = 0 // もも
 let chaSampleNum05: number = 0 // すいか
 for (let i = 0; i < chaSampleStr.length; i++){
     if (chaSampleStr[i] === 'りんご'){
-        console.log(chaSampleStr[i] + 'chaSampleNum01')
+        console.log(`${chaSampleStr}${chaSampleNum01}：個`)
     }
     else if(chaSampleStr[i] === 'いちご'){
-        console.log(chaSampleStr[i] + 'chaSampleNum02')
+        console.log(`${chaSampleStr}${chaSampleNum02}：個`)
     }
     else if(chaSampleStr[i] === 'ぶどう'){
-        console.log(chaSampleStr[i] + 'chaSampleNum03')
+        console.log(`${chaSampleStr}${chaSampleNum03}：個`)
     }
     else if(chaSampleStr[i] === 'もも'){
-        console.log(chaSampleStr[i] + 'chaSampleNum04')
+        console.log(`${chaSampleStr}${chaSampleNum04}：個`)
     }
     else (chaSampleStr[i] === 'すいか');{
-        console.log(chaSampleStr[i] + 'chaSampleNum05')
+        console.log(`${chaSampleStr}${chaSampleNum05}：個`)
     }
+    continue
 
 }
 
