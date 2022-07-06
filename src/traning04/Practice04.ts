@@ -38,15 +38,31 @@ for (const str of arraySampleStr) {
 
  // 調べてもどのように書けばいいかわかりませんでした
  // 配列の中身を表示 for文でのループ(string)
-const chaSampleNum: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも','すいか']
-for (let i = 0; i < chaSampleNum.length; i++){
-    console.log( chaSampleNum[0] + ':3個')
-    console.log( chaSampleNum[1] + ':2個')
-    console.log( chaSampleNum[3] + ':1個')
-    console.log( chaSampleNum[4] + ':2個')
-    console.log( chaSampleNum[8] + ':0個')
+const chaSampleStr: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも','すいか']
+let chaSampleNum01: number = 3 // りんご
+let chaSampleNum02: number = 2 // いちご
+let chaSampleNum03: number = 1 // ぶどう
+let chaSampleNum04: number = 2 // もも
+let chaSampleNum05: number = 0 // すいか
+for (let i = 0; i < chaSampleStr.length; i++){
+    if (chaSampleStr[i] === 'りんご'){
+      //  console.log(chaSampleStr + chaSampleNum01)
+    }
+    else if(chaSampleStr[i] === 'いちご'){
+       // console.log(chaSampleStr + chaSampleNum02)
+    }
+    else if(chaSampleStr[i] === 'ぶどう'){
+       // console.log(chaSampleStr + chaSampleNum03)
+    }
+    else if(chaSampleStr[i] === 'もも'){
+       // console.log(chaSampleStr + chaSampleNum04)
+    }
+    else (chaSampleStr[i] === 'すいか'){
+      //  console.log(chaSampleStr + chaSampleNum05)
+    }
 
 }
+
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
   yarn tsc 
