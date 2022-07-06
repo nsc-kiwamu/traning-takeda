@@ -22,7 +22,7 @@ else { // 名前が入力された場合
 }
 
 // 「私の苗字は田中ではありません」と表示
-const samplename2: string = "田中"
+const samplename2: string = ""
 if (samplename2 !== "田中") { // 田中じゃない場合の処理
     console.log("私の苗字は田中ではありません")
 }
