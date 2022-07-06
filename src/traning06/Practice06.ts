@@ -16,6 +16,15 @@
  console.log(`課題01は${practice06Map01.get('課題01')}です`)
  console.log(`課題02は${practice06Map01.get('課題02')}です`)
  console.log(`課題03は${practice06Map01.get('課題03')}です`)
+
+ // ヒント
+ for (const [key, value] of practice06Map01) {
+     // ループ時のそれぞれの値を確認してみる
+     console.log(`keyは${key}です`)
+     console.log(`valueは${value}です`)
+     console.log(`practice06Map01.get(key)は${practice06Map01.get(key)}です`)
+     console.log('---------- 1ループ終了 ------------')
+ }
  
  
  // MAPの宣言と値の設定(key:number, value:string)
