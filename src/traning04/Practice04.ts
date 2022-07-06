@@ -46,19 +46,19 @@ let chaSampleNum04: number = 2 // もも
 let chaSampleNum05: number = 0 // すいか
 for (let i = 0; i < chaSampleStr.length; i++){
     if (chaSampleStr[i] === 'りんご'){
-      //  console.log(chaSampleStr + chaSampleNum01)
+        console.log(chaSampleStr + 'chaSampleNum01')
     }
     else if(chaSampleStr[i] === 'いちご'){
-       // console.log(chaSampleStr + chaSampleNum02)
+        console.log(chaSampleStr + 'chaSampleNum02')
     }
     else if(chaSampleStr[i] === 'ぶどう'){
-       // console.log(chaSampleStr + chaSampleNum03)
+        console.log(chaSampleStr + 'chaSampleNum03')
     }
     else if(chaSampleStr[i] === 'もも'){
-       // console.log(chaSampleStr + chaSampleNum04)
+        console.log(chaSampleStr + 'chaSampleNum04')
     }
-    else (chaSampleStr[i] === 'すいか'){
-      //  console.log(chaSampleStr + chaSampleNum05)
+    else (chaSampleStr[i] === 'すいか');{
+        console.log(chaSampleStr + 'chaSampleNum05')
     }
 
 }
