@@ -7,11 +7,10 @@
  */
 
  // MAPの宣言と値の設定(key:string, value:string)
-<<<<<<< HEAD
-const practice05Map  = new Map<string, string>()
-practice05Map.set('絵本', '1200円')
-practice05Map.set('ノート', '100円')
-practice05Map.set('色鉛筆', '300円')
+const practice05Map  = new Map<string, number>()
+practice05Map.set('絵本', 1200)
+practice05Map.set('ノート', 100)
+practice05Map.set('色鉛筆', 300)
 
 
 // MAPの中身を表示(keyが特定できる場合)
@@ -30,6 +29,4 @@ for (const [key, value] of practice05Map) {
   yarn tsc 
   node dist/traning05/Practice05.js
  */
-=======
-const practice05Map  = new Map<string, number>()
->>>>>>> 2eafa0875bd801c653f1c48ba5e057165b1bf5d8
+
