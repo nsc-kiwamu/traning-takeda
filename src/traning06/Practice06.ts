@@ -84,6 +84,8 @@
  */
  const arraySample06Number: number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
  for(let i = 1; i <= 31; i++){
+   // const judge: boolean = i === 7
+    // console.log(i === 7)
     if(i === 7) { // 7の場合
          console.log('今日は７日なので良いことがありそうだ');
     }
