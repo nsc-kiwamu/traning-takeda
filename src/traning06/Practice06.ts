@@ -16,15 +16,6 @@
  console.log(`課題01は${practice06Map01.get('課題01')}です`)
  console.log(`課題02は${practice06Map01.get('課題02')}です`)
  console.log(`課題03は${practice06Map01.get('課題03')}です`)
-
- // ヒント
- for (const [key, value] of practice06Map01) {
-     // ループ時のそれぞれの値を確認してみる
-     console.log(`keyは${key}です`)
-     console.log(`valueは${value}です`)
-     console.log(`practice06Map01.get(key)は${practice06Map01.get(key)}です`)
-     console.log('---------- 1ループ終了 ------------')
- }
  
  
  // MAPの宣言と値の設定(key:number, value:string)
@@ -63,7 +54,11 @@
  
  // MAPの中身を表示(keyが特定できない場合)
  for (const [key, value] of practice06Map04) {
-     console.log(`${key}は${value}です`)
+    // ループ時のそれぞれの値を確認してみる
+     console.log(`${key}は${key}です`)
+     console.log(`valueは${value}です`)
+     console.log(`practice06Map04.get(key)は${practice06Map01}.get${key}です`)
+     console.log(`1ループ終了`)
  }
  
  
@@ -89,22 +84,27 @@
  　※〇は21～31が入る
  */
  const arraySample06Number: number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
- 
  for(let i = 1; i <= 31; i++){
     if(i === 7) { // 7の場合
-         console.log('今日は7日なので良いことがありそうだ');
+         console.log('今日は７日なので良いことがありそうだ');
     }
     else if(i === 13){ // 13の場合
-        console.log('今日は13日なので悪いことがありそうだ');
+         console.log('今日は１３日なので悪いことがありそうだ');
     }
-    else if(i === 4){ // 4,14,24の場合
+    else if(i === 4){ // 4日の場合
          console.log('今日は４がつく日なので悪いことがないように気を付けよう');
+    }
+    else if(i === 14){ // 14日の場合
+         console.log(`今日は４がつく日なので悪いことがないように気を付けよう`);
+    }
+    else if (i === 24){ // 24日の場合
+         console.log(`今日は４がつく日なので悪いことがないように気を付けよう`);
     }
     else if(i >= 10){ // 10日未満の場合
          console.log(`今月は${arraySample06Number}日なのでまだはじまったばかりだ`);
     }
-    else if(i = 11 < 20){ // 11~20日の場合
-        console.log(`今月は${arraySample06Number}日なので中だるみしないように気を付けよう`);
+    else if(11 <= i && i <=20){ // 11~20日の場合
+         console.log(`今月は${arraySample06Number}日なので中だるみしないように気を付けよう`);
     }
     else if(i <= 21){ // 21日以上の場合
          console.log(`今月は${arraySample06Number}日なので最後まで気を引き締めよう`);
