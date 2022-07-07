@@ -25,7 +25,7 @@
  practice06Map02.set(2022, '冬')
  
  // MAPの中身を表示(keyが特定できる場合)
- console.log(`2022${practice06Map02.get(2020)}です`)
+ console.log(`2020${practice06Map02.get(2020)}です`)
  console.log(`2021${practice06Map02.get(2021)}です`)
  console.log(`2022${practice06Map02.get(2022)}です`)
  
@@ -58,7 +58,6 @@
      console.log(`${key}は${key}です`)
      console.log(`valueは${value}です`)
      console.log(`practice06Map04.get(key)は${practice06Map01}.get${key}です`)
-     console.log(`1ループ終了`)
  }
  
  
