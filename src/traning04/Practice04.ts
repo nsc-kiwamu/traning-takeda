@@ -59,7 +59,7 @@ for (let i = 0; i < chaSampleStr.length; i++){
     chaSampleNum04 = chaSampleNum04 + 1
  }
   else (chaSampleStr[i] === 'すいか');{
-    chaSampleNum05 = chaSampleNum05
+    chaSampleNum05 = chaSampleNum05 // + 1 と書くと、9と表示されるので、何も書いていない
  }
 
 }
