@@ -86,33 +86,30 @@
  for(let i = 1; i <= 31; i++){
    // const judge: boolean = i === 7
     // console.log(i === 7)
-    if(i === 7) { // 7の場合
-         console.log('今日は７日なので良いことがありそうだ');
-    }
-    else if(i === 13){ // 13の場合
-         console.log('今日は１３日なので悪いことがありそうだ');
-    }
-    else if(i === 4){ // 4日の場合
-         console.log('今日は４がつく日なので悪いことがないように気を付けよう');
-    }
-    else if(i === 14){ // 14日の場合
-         console.log(`今日は４がつく日なので悪いことがないように気を付けよう`);
-    }
-    else if (i === 24){ // 24日の場合
-         console.log(`今日は４がつく日なので悪いことがないように気を付けよう`);
-    }
-    else if(i >= 10){ // 10日未満の場合
-         console.log(`今月は${arraySample06Number}日なのでまだはじまったばかりだ`);
-    }
-    else if(11 <= i && i <=20){ // 11~20日の場合
-         console.log(`今月は${arraySample06Number}日なので中だるみしないように気を付けよう`);
-    }
-    else if(i <= 21){ // 21日以上の場合
-         console.log(`今月は${arraySample06Number}日なので最後まで気を引き締めよう`);
-    }
- 
+  if(i === 7) { // 7の場合
+  }
+   else if(i === 13){ // 13の場合
+  }
+   else if(i === 4){ // 4日の場合
+  }
+   else if(i === 14){ // 14日の場合
+  }
+   else if (i === 24){ // 24日の場合
+  }
+   else if(i >= 10){ // 10日未満の場合
+  }
+   else if(11 <= i && i <=20){ // 11~20日の場合
+  }
+   else if(i <= 21){ // 21日以上の場合
+  }
 }
- 
+  console.log('今日は７日なので良いことがありそうだ');
+  console.log('今日は１３日なので悪いことがありそうだ');
+  console.log('今日は４がつく日なので悪いことがないように気を付けよう');
+  console.log(`今月は１～１０日なのでまだはじまったばかりだ`);
+  console.log(`今月は１１～２１日なので中だるみしないように気を付けよう`);
+  console.log(`今月は２１～３１日なので最後まで気を引き締めよう`);
+
  /*※1 「Ctrl + @」でターミナルを開き以下を実行
    yarn tsc 
    node dist/traning06/Practice06.js
