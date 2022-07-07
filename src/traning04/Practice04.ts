@@ -45,25 +45,30 @@ let chaSampleNum03: number = 0 // ぶどう
 let chaSampleNum04: number = 0 // もも
 let chaSampleNum05: number = 0 // すいか
 for (let i = 0; i < chaSampleStr.length; i++){
-    if (chaSampleStr[i] === 'りんご'){
-        console.log(`${chaSampleStr}${chaSampleNum01}：個`)
-    }
-    else if(chaSampleStr[i] === 'いちご'){
-        console.log(`${chaSampleStr}${chaSampleNum02}：個`)
-    }
-    else if(chaSampleStr[i] === 'ぶどう'){
-        console.log(`${chaSampleStr}${chaSampleNum03}：個`)
-    }
-    else if(chaSampleStr[i] === 'もも'){
-        console.log(`${chaSampleStr}${chaSampleNum04}：個`)
-    }
-    else (chaSampleStr[i] === 'すいか');{
-        console.log(`${chaSampleStr}${chaSampleNum05}：個`)
-    }
-    continue
-
+    console.log(chaSampleStr[i])
+  //  (let i = 0; i < chaSampleStr.length; i++){
+if (chaSampleStr[i] === 'りんご' ){
+    chaSampleNum01 = chaSampleNum01 + 1
+   // console.log(chaSampleNum01++ + '!')
+    console.log(chaSampleNum01 + '☆')
+   // console.log(chaSampleNum01 +=1 + '!')
+// console.log(`${chaSampleStr}${chaSampleNum01; chaSampleNum01++}：個`)
+}
+// else if(chaSampleStr[i] === 'いちご'){
+//  console.log(`${chaSampleStr}${chaSampleNum02}：個`)
+//  }
+//  else if(chaSampleStr[i] === 'ぶどう'){
+//   console.log(`${chaSampleStr}${chaSampleNum03}：個`)
+//  }
+//  else if(chaSampleStr[i] === 'もも'){
+//   console.log(`${chaSampleStr}${chaSampleNum04}：個`)
+//  }
+//  else (chaSampleStr[i] === 'すいか');{
+//   console.log(`${chaSampleStr}${chaSampleNum05}：個`)
+//  }
 }
 
+console.log(chaSampleNum01 + '最後')
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
   yarn tsc 
