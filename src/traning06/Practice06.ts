@@ -12,69 +12,60 @@
  const practice06Map03  = new Map<string, number>()
  const practice06Map04  = new Map<number, number>()
 
-// 値の設定(key:string, value:string)
+ // 値の設定(key:string, value:string)
   practice06Map01.set('課題01', '簡単')
   practice06Map01.set('課題02', '簡単')
   practice06Map01.set('課題03', 'やや難しい')
 
-  // MAPの中身を表示(keyが特定できる場合)
-  console.log(`課題01は${practice06Map01.get('課題01')}です`)
-  console.log(`課題02は${practice06Map01.get('課題02')}です`)
-  console.log(`課題03は${practice06Map01.get('課題03')}です`)
 
  // 値の設定(key:number, value:string)
   practice06Map02.set(2020, '春')
   practice06Map02.set(2021, '夏')
   practice06Map02.set(2022, '冬')
 
- // MAPの中身を表示(keyが特定できる場合)
-  console.log(`2020は${practice06Map02.get(2020)}です`)
-  console.log(`2021は${practice06Map02.get(2021)}です`)
-  console.log(`2022は${practice06Map02.get(2022)}です`)
  
  // 値の設定(key:string, value:number)
   practice06Map03.set('絵本', 1200)
   practice06Map03.set('ノート', 100)
   practice06Map03.set('色鉛筆', 300)
 
- // MAPの中身を表示(keyが特定できる場合)
-  console.log(`絵本${practice06Map01.get('絵本')}です`)
-  console.log(`ノートは${practice06Map01.get('ノート')}です`)
-  console.log(`色鉛筆は${practice06Map01.get('色鉛筆')}です`)
 
  // 値の設定(key:number, value:number)
-  practice06Map04.set(1, 1)
-  practice06Map04.set(3, 3)
-  practice06Map04.set(5, 5)
+  practice06Map04.set(1, 30)
+  practice06Map04.set(3, 50)
+  practice06Map04.set(5, 70)
 
- // MAPの中身を表示(keyが特定できる場合)
-  console.log(`1は${practice06Map04.get(1)}です`)
-  console.log(`3は${practice06Map04.get(3)}です`)
-  console.log(`5は${practice06Map04.get(5)}です`)
- 
 
  // ヒント
  for (const [key, value] of practice06Map01) {
-   console.log(`${key}は${key}です`)
-   console.log(`${value}は${value}です`)
+  //  console.log(`${key}は${key}です`)
+  //  console.log(`${value}は${value}です`)
+   console.log(`${key}は${value}です`)
+   console.log(`${value}は${key}です`)
    console.log(`${practice06Map01.get(key)}は${practice06Map01.get(key)}です`)
  }
 
  for (const [key, value] of practice06Map02) {
-  console.log(`${key}は${key}です`)
-  console.log(`${value}は${value}です`)
+  // console.log(`${key}は${key}です`)
+  // console.log(`${value}は${value}です`)
+  console.log(`${key}は${value}です`)
+  console.log(`${value}は${key}です`)
   console.log(`${practice06Map02.get(key)}は${practice06Map02.get(key)}です`)
 }
 
 for (const [key, value] of practice06Map03) {
-  console.log(`${key}は${key}です`)
-  console.log(`${value}は${value}です`)
+  // console.log(`${key}は${key}です`)
+  // console.log(`${value}は${value}です`)
+  console.log(`${key}は${value}です`)
+  console.log(`${value}は${key}です`)
   console.log(`${practice06Map03.get(key)}は${practice06Map03.get(key)}です`)
 }
 
 for (const [key, value] of practice06Map04) {
-  console.log(`${key}は${key}です`)
-  console.log(`${value}は${value}です`)
+  // console.log(`${key}は${key}です`)
+  // console.log(`${value}は${value}です`)
+  console.log(`${key}は${value}です`)
+  console.log(`${value}は${key}です`)
   console.log(`${practice06Map04.get(key)}は${practice06Map04.get(key)}です`)
 }
 
@@ -107,30 +98,33 @@ for (const [key, value] of practice06Map04) {
  const arraySample06Number: number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
  for(let i = 1; i <= 31; i++){
   if(arraySample06Number[i] === 7) { // 7の場合
+    console.log('今日は７日なので良いことがありそうだ');
   }
    else if(arraySample06Number[i] === 13){ // 13の場合
-  }
+    console.log('今日は１３日なので悪いことがありそうだ');
+  } 
    else if(arraySample06Number[i] === 4){ // 4日の場合
+    console.log('今日は４がつく日なので悪いことがないように気を付けよう');
   }
    else if(arraySample06Number[i] === 14){ // 14日の場合
+    console.log('今日は４がつく日なので悪いことがないように気を付けよう');
   }
    else if (arraySample06Number[i] === 24){ // 24日の場合
+    console.log('今日は４がつく日なので悪いことがないように気を付けよう');
   }
    else if(arraySample06Number[i] >= 10){ // 10日未満の場合
+    console.log(`今月は１～１０日なのでまだはじまったばかりだ`);
   }
    else if(11 <= arraySample06Number[i] && arraySample06Number[i] <= 20){ // 11~20日の場合
+    console.log(`今月は１１～２１日なので中だるみしないように気を付けよう`);
   }
    else if(arraySample06Number[i] <= 21){ // 21日以上の場合
+    console.log(`今月は２１～３１日なので最後まで気を引き締めよう`);
   }
 
 }
 
-  console.log('今日は７日なので良いことがありそうだ');
-  console.log('今日は１３日なので悪いことがありそうだ');
-  console.log('今日は４がつく日なので悪いことがないように気を付けよう');
-  console.log(`今月は１～１０日なのでまだはじまったばかりだ`);
-  console.log(`今月は１１～２１日なので中だるみしないように気を付けよう`);
-  console.log(`今月は２１～３１日なので最後まで気を引き締めよう`);
+
  
 
  /*※1 「Ctrl + @」でターミナルを開き以下を実行
