@@ -115,7 +115,7 @@ for (const [key, value] of practice06Map04) {
    else if(arraySample06Number[i] >= 10){ // 10日未満の場合
     console.log(`今月は１～１０日なのでまだはじまったばかりだ`);
   }
-   else if(11 <= arraySample06Number[i] && arraySample06Number[i] <= 20){ // 11~20日の場合
+   else if(11 >= arraySample06Number[i] && arraySample06Number[i] <= 20){ // 11~20日の場合
     console.log(`今月は１１～２１日なので中だるみしないように気を付けよう`);
   }
    else if(arraySample06Number[i] <= 21){ // 21日以上の場合
