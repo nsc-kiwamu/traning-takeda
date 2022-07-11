@@ -38,13 +38,26 @@ for (const str of arraySampleStr) {
 
  // 調べてもどのように書けばいいかわかりませんでした
  // 配列の中身を表示 for文でのループ(string)
-const chaSampleNum: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも','すいか']
-for (let i = 0; i < chaSampleNum.length; i++){
-    console.log( chaSampleNum[0] + ':3個')
-    console.log( chaSampleNum[1] + ':2個')
-    console.log( chaSampleNum[3] + ':1個')
-    console.log( chaSampleNum[4] + ':2個')
-    console.log( chaSampleNum[8] + ':0個')
+
+const chaSampleStr: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも','すいか']
+const chaSampleNum: number[] = [3, 2, 1, 2, 0] // 個数
+for (let i = 0; i < chaSampleStr.length; i++){
+    if ([0] === chaSampleNum){ // 配列の中身(string)と個数(number)が等しいければ
+    console.log( chaSampleStr[0] + chaSampleNum + '：個' ) // 配列名と個数を表示する  // [0]とは、配列での「りんご」の順の番号
+    }
+    else if ([1] === chaSampleNum ){
+    console.log( chaSampleStr[1] + chaSampleNum + '：個' ) // [1]とは、配列での「いちご」の順の番号
+    }
+    else if ([3] === chaSampleNum ){
+    console.log( chaSampleStr[3] + chaSampleNum + '：個' ) // [3]とは、配列での「ぶどう」の順の番号
+    }
+    else if ([4] === chaSampleNum ){
+    console.log( chaSampleStr[4] + chaSampleNum + '：個' ) // [4]とは、配列での「もも」の順の番号
+    }
+    else if ([8] === chaSampleNum ){
+    console.log( chaSampleStr[8] + chaSampleNum + '：個' ) // [8]とは、配列での「すいか」の順の番号
+    }
+
 
 }
 

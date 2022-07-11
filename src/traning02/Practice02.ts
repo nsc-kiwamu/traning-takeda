@@ -15,7 +15,7 @@
 // 「私の名前は○○です」と表示
 const samplename: string = "彩乃"
 if (samplename === "") { // 名前が入力されない場合の処理
-    console.log("私には名前がありません")
+    console.log("私には名前がありません。")
 }
 else { // 名前が入力された場合
     console.log(`私の名前は${samplename}です`)
@@ -46,7 +46,8 @@ if (sampleage < 6) {
 } else if (6 <= sampleage && sampleage < 13) { // ６歳以上13歳未満であれば
     console.log(`私は小学生です`)
 }else {
-    console.log(`私は小学生以上です`) 
+    console.log(`私は小学生以上です`) //それ以上ならば
+
 }
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
