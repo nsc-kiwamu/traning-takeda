@@ -33,7 +33,7 @@ for (const str of arraySampleStr) {
  いちご:2個
  ぶどう:1個
  もも:2個
- すいか:0個
+ すいか:1個
  */
 
  // 調べてもどのように書けばいいかわかりませんでした
@@ -59,7 +59,7 @@ for (let i = 0; i < chaSampleStr.length; i++){
     chaSampleNum04 = chaSampleNum04 + 1
  }
   else if(chaSampleStr[i] === 'すいか'){
-    chaSampleNum05 = chaSampleNum05 // + 1 と書くと、9と表示されるので、何も書いていない
+    chaSampleNum05 = chaSampleNum05 + 1 
  }
 
 }
