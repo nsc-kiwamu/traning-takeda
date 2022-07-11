@@ -33,33 +33,44 @@ for (const str of arraySampleStr) {
  いちご:2個
  ぶどう:1個
  もも:2個
- すいか:0個
+ すいか:1個
  */
 
  // 調べてもどのように書けばいいかわかりませんでした
  // 配列の中身を表示 for文でのループ(string)
 
 const chaSampleStr: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも','すいか']
-const chaSampleNum: number[] = [3, 2, 1, 2, 0] // 個数
+let chaSampleNum01: number = 0 // りんご
+let chaSampleNum02: number = 0 // いちご
+let chaSampleNum03: number = 0 // ぶどう
+let chaSampleNum04: number = 0 // もも
+let chaSampleNum05: number = 0 // すいか
 for (let i = 0; i < chaSampleStr.length; i++){
-    if ([0] === chaSampleNum){ // 配列の中身(string)と個数(number)が等しいければ
-    console.log( chaSampleStr[0] + chaSampleNum + '：個' ) // 配列名と個数を表示する  // [0]とは、配列での「りんご」の順の番号
-    }
-    else if ([1] === chaSampleNum ){
-    console.log( chaSampleStr[1] + chaSampleNum + '：個' ) // [1]とは、配列での「いちご」の順の番号
-    }
-    else if ([3] === chaSampleNum ){
-    console.log( chaSampleStr[3] + chaSampleNum + '：個' ) // [3]とは、配列での「ぶどう」の順の番号
-    }
-    else if ([4] === chaSampleNum ){
-    console.log( chaSampleStr[4] + chaSampleNum + '：個' ) // [4]とは、配列での「もも」の順の番号
-    }
-    else if ([8] === chaSampleNum ){
-    console.log( chaSampleStr[8] + chaSampleNum + '：個' ) // [8]とは、配列での「すいか」の順の番号
-    }
+
+ if (chaSampleStr[i] === 'りんご' ){
+    chaSampleNum01 = chaSampleNum01 + 1
+ }
+  else if(chaSampleStr[i] === 'いちご'){
+    chaSampleNum02 = chaSampleNum02 + 1
+ }
+  else if(chaSampleStr[i] === 'ぶどう'){
+    chaSampleNum03 = chaSampleNum03 + 1
+ }
+  else if(chaSampleStr[i] === 'もも'){
+    chaSampleNum04 = chaSampleNum04 + 1
+ }
+  else if(chaSampleStr[i] === 'すいか'){
+    chaSampleNum05 = chaSampleNum05 + 1 
+ }
 
 
 }
+
+console.log('りんご：' + chaSampleNum01 + '個')
+console.log('いちご：' + chaSampleNum02 + '個')
+console.log('ぶどう：' + chaSampleNum03 + '個')
+console.log('もも：' + chaSampleNum04 + '個')
+console.log('すいか：' + chaSampleNum05 + '個')
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
   yarn tsc 
