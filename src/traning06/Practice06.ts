@@ -96,29 +96,29 @@ for (const [key, value] of practice06Map04) {
  　※〇は21～31が入る
  */
  const arraySample06Number: number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
- for(let i = 1; i <= 31; i++){
-  if(arraySample06Number[i] === 7) { // 7の場合
+ for(let i = 0; i <= 31; i++){ // 初期値を0にすると成功した
+  if(arraySample06Number[i] === 7) { // 7の場合1回出力.OK
     console.log('今日は７日なので良いことがありそうだ');
   }
-   else if(arraySample06Number[i] === 13){ // 13の場合
+   else if(arraySample06Number[i] === 13){ // 13の場合「1回出力」.OK
     console.log('今日は１３日なので悪いことがありそうだ');
   } 
-   else if(arraySample06Number[i] === 4){ // 4日の場合
+   else if(arraySample06Number[i] === 4){ // 4日の場合「1回出力」.OK
     console.log('今日は４がつく日なので悪いことがないように気を付けよう');
   }
-   else if(arraySample06Number[i] === 14){ // 14日の場合
+   else if(arraySample06Number[i] === 14){ // 14日の場合「1回出力」.OK
     console.log('今日は４がつく日なので悪いことがないように気を付けよう');
   }
-   else if (arraySample06Number[i] === 24){ // 24日の場合
+   else if (arraySample06Number[i] === 24){ // 24日の場合「1回出力」.OK
     console.log('今日は４がつく日なので悪いことがないように気を付けよう');
   }
-   else if(arraySample06Number[i] >= 10){ // 10日未満の場合
+   else if(1 <= arraySample06Number[i] && arraySample06Number[i] <= 10){ // 10日未満の場合「8回出力 .OK
     console.log(`今月は１～１０日なのでまだはじまったばかりだ`);
   }
-   else if(11 >= arraySample06Number[i] && arraySample06Number[i] <= 20){ // 11~20日の場合
-    console.log(`今月は１１～２１日なので中だるみしないように気を付けよう`);
+   else if(11 <= arraySample06Number[i] && arraySample06Number[i] <= 20){ // 11~20日の場合「8回出力」.OK
+    console.log(`今月は１１～２０日なので中だるみしないように気を付けよう`);
   }
-   else if(arraySample06Number[i] <= 21){ // 21日以上の場合
+   else if(21 <= arraySample06Number[i]){ // 21日以上の場合「10回出力」.OK
     console.log(`今月は２１～３１日なので最後まで気を引き締めよう`);
   }
 
