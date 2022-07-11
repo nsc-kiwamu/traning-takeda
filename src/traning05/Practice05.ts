@@ -7,6 +7,8 @@
  */
 
  // MAPの宣言と値の設定(key:string, value:string)
+
+const practice05Map  = new Map<string, number>()
  const practice05Map  = new Map<string, number>()
  practice05Map.set('絵本', 1200)
  practice05Map.set('ノート', 100)
@@ -29,3 +31,4 @@
    yarn tsc 
    node dist/traning05/Practice05.js
   */
+

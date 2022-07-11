@@ -38,6 +38,7 @@ for (const str of arraySampleStr) {
 
  // 調べてもどのように書けばいいかわかりませんでした
  // 配列の中身を表示 for文でのループ(string)
+
 const chaSampleStr: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも','すいか']
 const chaSampleNum: number[] = [3, 2, 1, 2, 0] // 個数
 for (let i = 0; i < chaSampleStr.length; i++){
@@ -56,6 +57,7 @@ for (let i = 0; i < chaSampleStr.length; i++){
     else if ([8] === chaSampleNum ){
     console.log( chaSampleStr[8] + chaSampleNum + '：個' ) // [8]とは、配列での「すいか」の順の番号
     }
+
 
 }
 

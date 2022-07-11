@@ -47,6 +47,7 @@ if (sampleage < 6) {
     console.log(`私は小学生です`)
 }else {
     console.log(`私は小学生以上です`) //それ以上ならば
+
 }
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
