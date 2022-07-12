@@ -13,12 +13,14 @@
 let Sample: number = 0
 for (let i = 1; i <= 100; i++) {
 
+
     Sample += i
 }
 console.log(`1～100の加算結果は${Sample}です`)
 
 // 1～10の奇数の加算結果は25です
 Sample = 0
+
 for (let i = 1; i <= 10; i++) {
     if (i % 2 !== 1) {
 

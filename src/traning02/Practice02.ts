@@ -16,6 +16,7 @@
 const samplename: string = "彩乃"
 if (samplename === "") { // 名前が入力されない場合の処理
     console.log("私には名前がありません。")
+
 }
 else { // 名前が入力された場合
     console.log(`私の名前は${samplename}です`)

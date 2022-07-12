@@ -31,4 +31,3 @@ const practice05Map  = new Map<string, number>()
    yarn tsc 
    node dist/traning05/Practice05.js
   */
-

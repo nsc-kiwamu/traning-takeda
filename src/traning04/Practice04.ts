@@ -64,6 +64,7 @@ for (let i = 0; i < chaSampleStr.length; i++){
  }
 
 
+
 }
 
 console.log('りんご：' + chaSampleNum01 + '個')
