@@ -95,7 +95,6 @@ export function praMap8(practice8: number): number {
 */
 
 export function praMap9(practice9: string[]): number {
-    let returnmMap2: string[] = []
-    console.log(practice9.length);
-    return returnmMap2
+    let returnMap2: string[] = []
+    return practice9.length
 }

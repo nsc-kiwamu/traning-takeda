@@ -62,23 +62,23 @@ import { callCounter, makeList, makeMap, printCall, printName, wrapSide, praMap8
 
 
 
- /* 8. Common08.tsに以下の条件を満たす関数を作成し、Practice08から呼び出すこと ???
+ /* 8. Common08.tsに以下の条件を満たす関数を作成し、Practice08から呼び出すこと .OK
     引数:number、戻り値:number
     引数で受け取った数値側の値を2倍にして返却する
  */
  const practice8 = 5
  const returnMap = praMap8(practice8)
- console.log(`(2倍)にして返却する：${practice8}\r\n`)
+ console.log(`(2倍)にして返却する：${returnMap}\r\n`)
  
 
 
- /* 9. Common08.tsに以下の条件を満たす関数を作成し、Practice08から呼び出すこと
+ /* 9. Common08.tsに以下の条件を満たす関数を作成し、Practice08から呼び出すこと .OK
  　　引数:string[]、戻り値:number
      引数で受け取った配列の要素数を返却する
  */
  const practice9 = ['りんご','いちご','ぶどう']
  const returnMap2 = praMap9(practice9)
- console.log(`praMap9に「${practice9}」以下のMapが返却されました`)
+ console.log(`praMap9に「${returnMap2}」以下のMapが返却されました`)
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
  yarn tsc
