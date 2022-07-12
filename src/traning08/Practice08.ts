@@ -13,14 +13,13 @@ import { callCounter, makeList, makeMap, printCall, printName, wrapSide, praMap8
  // 2. 関数printNameを呼び出し、コンソールに「パラメータで受け取った名前は竹田です」と出力されるように作成する .OK
  printName("竹田")
 
- /* 3. 関数callCounterをfor文を使用して3回呼び出し、コンソールに以下が出力されるように作成する ??
+ /* 3. 関数callCounterをfor文を使用して3回呼び出し、コンソールに以下が出力されるように作成する .OK
     callCounterから1が返却されました
     callCounterから2が返却されました
     callCounterから3が返却されました
  */
- const retNum = callCounter()
+ 
  for(let i = 1; i <= 3; i++){
- console.log(`callCounterから${retNum}が返却されました`) 
  console.log(`callCounterから${callCounter()}が返却されました\r\n`) 
  }
 
@@ -67,9 +66,9 @@ import { callCounter, makeList, makeMap, printCall, printName, wrapSide, praMap8
     引数:number、戻り値:number
     引数で受け取った数値側の値を2倍にして返却する
  */
- const num1 = [5]
- const num2 = [5]
- console.log(`第一引数の要素数:${num1}、第二引数の要素数:${num2}\r\n`)
+ const practice8 = 5
+ const returnMap = praMap8(practice8)
+ console.log(`(2倍)にして返却する：${practice8}\r\n`)
  
 
 
@@ -77,10 +76,9 @@ import { callCounter, makeList, makeMap, printCall, printName, wrapSide, praMap8
  　　引数:string[]、戻り値:number
      引数で受け取った配列の要素数を返却する
  */
- const num3 = [3]
- const num4 = [3]
- console.log(`第一引数の要素数:${num3}、第二引数の要素数:${num4}\r\n`)
- 
+ const practice9 = ['りんご','いちご','ぶどう']
+ const returnMap2 = praMap9(practice9)
+ console.log(`praMap9に「${practice9}」以下のMapが返却されました`)
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
  yarn tsc
