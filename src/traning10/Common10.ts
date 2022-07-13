@@ -3,6 +3,8 @@ export type Animal = {
     type: string
 }
 
+
+
 /**
  * 引数で受けとった年月日を〇年〇月〇日と表示する
  * @param year 年
@@ -41,17 +43,47 @@ export function selectCatType(animals: Animal[]): string[] {
 }
 
 /**
- * 第二引数で受け取った動物の名称一覧を返却する
- * @param type 動物の種類
+ * 犬科の動物の名称一覧を返却する //竹田追記
  * @param animals 動物一覧
  */
- export function selectAnyType(animals: Animal[], type: string): string[] {
+ export function selectDogType(animals: Animal[]): string[] {
+    let dogs: string[] = []
+
+    for (const animal of animals) {
+        if (animal.type === 'dog') {
+            dogs.push(animal.name)
+        }
+
+    }
+    return dogs
+}
+
+
+
+/**
+ * 第二引数で受け取った動物の名称一覧を返却する
+ * @param type 動物の種類
+ * @param animals2 動物一覧
+ */
+ export function selectAnyType(animals2: Animal[], type: string ): string[] {
     let selects: string[] = []
 
     // ここに処理を追加する
+    for (const animal2 of animals2) {
+        if (animal2.type === 'cat') {
+            selects.push(animal2.type)
+        }
+        // else (animal2.type === 'dog'); {
+        //     selects.push(animal2.type)
+        // }
+
+    }
+
 
     return selects
 }
+
+
 
 /**
  * 第一引数で取得した動物一覧をタイプ毎にまとめてmapで返却する
