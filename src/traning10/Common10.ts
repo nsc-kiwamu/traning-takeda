@@ -52,3 +52,26 @@ export function selectCatType(animals: Animal[]): string[] {
 
     return selects
 }
+
+/**
+ * 第一引数で取得した動物一覧をタイプ毎にまとめてmapで返却する
+ * @param animals 動物一覧
+ */
+export function filterType(animals: Animal[]): Map<string, Animal[]> {
+    const retMap = new Map<string, Animal[]>
+
+    for (let animal of animals) {
+        // タイプを取得する
+        const type = animal.type
+        // mapからタイプをキーに動物一覧を取得する
+        const animalList = retMap.get(type)
+        // 取得したリストが空であれば新規作成、すでに存在していれば追加する
+        if (animalList === undefined) {
+            retMap.set(type, [animal])
+        } else {
+            animalList.push(animal)
+            retMap.set(type, animalList)
+        }
+    }
+    return retMap
+}
