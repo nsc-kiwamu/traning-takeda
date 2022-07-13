@@ -3,3 +3,8 @@ type CompanyEmployee = {
     age: number
     gender: string
 }
+
+type Fruit = {
+    name: string
+    color: string
+}
