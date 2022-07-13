@@ -55,10 +55,12 @@ import { callCounter, makeList, makeMap, printCall, printName, wrapSide, praMap8
  /* 7. 関数MakeMapを呼び出し、コンソールに以下が出力されるように作成する
     第一引数と第二引数の要素数を合わせて下さい。第一引数の要素数:3、第二引数の要素数:2.OK
  */ 
- const names = [3]
- const divs = [2]
- console.log(`第一引数と第二引数の要素数を合わせて下さい。第一引数の要素数:${names}、第二引数の要素数:${divs}\r\n`)
- 
+ const names = ['3']
+ const divs = ['2']
+ const retMap2 = makeMap(names, divs)
+ for (const [names, divs] of retMap2) {
+   console.log(`第一引数と第二引数の要素数を合わせて下さい。第一引数の要素数:${names}、第二引数の要素数:${divs}\r\n`)
+}
 
 
 
