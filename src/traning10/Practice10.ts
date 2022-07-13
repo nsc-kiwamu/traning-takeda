@@ -33,5 +33,7 @@ import { formatDate } from "./Common10.js";
   　　第一引数は4で使用していた配列と同じもの
   　　第二引数は'dog'
   　　課題4の実行結果と同じになること
+
+  8. filterTypeの内容を確認し、処理内容を理解する
   
 */
