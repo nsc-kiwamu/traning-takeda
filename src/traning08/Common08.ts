@@ -2,14 +2,14 @@
 let privateCounter: number = 0
 
 /**
- * 自身が呼び出されたことをコンソールに出力する
+ * 1自身が呼び出されたことをコンソールに出力する OK
  */
 export function printCall(): void {
     console.log('printCallが呼ばれました\r\n')
 }
 
 /**
- * 引数で受け取った名前をコンソールに出力する
+ * 2引数で受け取った名前をコンソールに出力する OK
  * @param name 名前
  */
  export function printName(name: string): void {
@@ -18,7 +18,7 @@ export function printCall(): void {
 }
 
 /**
- * 自身が呼び出された回数を返却する
+ * 3自身が呼び出された回数を返却する ×
  */
  export function callCounter(): number {
     console.log('callCounterが呼ばれました')
@@ -27,7 +27,7 @@ export function printCall(): void {
 }
 
 /**
- * 引数で受け取った文字列の前後を「*」でくくって返却する
+ * 4引数で受け取った文字列の前後を「*」でくくって返却する OK
  * @param target 対象文字列
  */
 export function wrapSide(target: string): string {
@@ -36,7 +36,7 @@ export function wrapSide(target: string): string {
 }
 
 /**
- * 引数で受け取った数の配列を作成し返却する
+ * 5引数で受け取った数の配列を作成し返却する  OK
  * 配列の要素は0～サイズ-1の数値を設定する
  * @param size 作成対象の配列のサイズ
  * @returns 作成した配列
@@ -53,7 +53,7 @@ export function makeList(size: number): number[] {
 }
 
 /**
- * 引数で受け取った配列からMapを作成して返却する
+ * 6?7?引数で受け取った配列からMapを作成して返却する  OK
  * 第一引数がMapのkey、第二引数がMapのvalueとなる
  * @param names Mapのkeyとなる配列
  * @param devs Mapのvalueとなる配列
@@ -73,4 +73,28 @@ export function makeList(size: number): number[] {
     }
 
     return retMap
+}
+
+
+/* 8. Common08.tsに以下の条件を満たす関数を作成し、Practice08から呼び出すこと　×
+    引数:number、戻り値:number
+    引数で受け取った数値側の値を2倍にして返却する
+*/
+
+export function praMap8(practice8: number): number {
+    let returnMap: number
+    console.log('praMap8が呼ばれました');
+    return practice8 * 2
+}
+
+
+
+/* 9. Common08.tsに以下の条件を満たす関数を作成し、Practice08から呼び出すこと
+ 　　引数:string[]、戻り値:number
+     引数で受け取った配列の要素数を返却する
+*/
+
+export function praMap9(practice9: string[]): number {
+    let returnMap2: string[] = []
+    return practice9.length
 }
