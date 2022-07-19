@@ -110,3 +110,9 @@ export function inCompanyEmployee2OutNum(inCe1: CompanyEmployee,inCe2: CompanyEm
     }
     return ret
 }
+
+
+/*※1 「Ctrl + @」でターミナルを開き以下を実行
+  yarn tsc 
+  node dist/traning11/Practice11.js
+ */

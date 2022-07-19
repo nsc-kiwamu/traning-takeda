@@ -12,16 +12,28 @@ import { inNumOutStr, inNum2OutStr, inStrOutNum, inStr2OutNum, inCompanyEmployee
 
   3. inNumOutStrを実行し、結果は以下となるように引数を設定すること
   　15を3で割った時の余りは0です
+*/
+const inNum1 = 10
+const str = inNumOutStr(inNum1)
+console.log(`${inNum1}`)
 
+
+/*
   4. inStrOutNumを実行し、結果は以下となるように引数を設定すること
   　5
+*/
 
+/*
   5. inStr2OutNumを実行し、結果は以下となるように引数を設定すること
   　13
+*/
 
+/*
   6. inCompanyEmployee2OutNumを実行し、結果は以下となるように引数を設定すること
   　22
+*/
 
+/*
   7. inCompanyEmployeesNumberOutCompanyEmployeesを実行し、以下の結果とすること
   　・第一引数:要素数4とする
   　・第二引数:25とする
@@ -30,6 +42,9 @@ import { inNumOutStr, inNum2OutStr, inStrOutNum, inStr2OutNum, inCompanyEmployee
   　　出力例)「${名前}」の欄は引数で設定した任意の名前で良い
   　　　年齢が25歳以下の社員は${名前}さんでした
   　　　年齢が25歳以下の社員は${名前}さんでした
-  　
 */
 
+/*※1 「Ctrl + @」でターミナルを開き以下を実行
+  yarn tsc 
+  node dist/traning11/Sample11.js
+ */
