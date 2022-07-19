@@ -80,3 +80,5 @@ console.log(`${return7}`)
   yarn tsc 
   node dist/traning11/Practice11.js
  */
+
+  
