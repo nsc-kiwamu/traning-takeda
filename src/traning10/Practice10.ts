@@ -44,7 +44,7 @@ const animals: Animal[] = [{name: 'ぺんぎん', type: 'bird'},{name: 'ライ�
 console.log('犬科の動物を探します')
 const dogs: string[] = selectDogType(animals)
 for (let dog of dogs) {
-    console.log(dogs)
+    console.log(dog)
 }
 console.log('犬科の動物は以上です。\r\n')
 
@@ -62,14 +62,15 @@ console.log('犬科の動物は以上です。\r\n')
   　　サンプルの実行結果と同じになること
 */
 
-const animals2: Animal[] = [{name: 'ぺんぎん', type: 'bird'},{name: '犬', type: 'dog'},{name: '猫', type: 'cat'}]
-const type = 'cat'
+const animals2: Animal[] = [{name: 'ぺんぎん', type: 'bird'},{name: 'ライオン', type: 'cat'},{name: '猫', type: 'cat'}]
+const type1 = 'cat'
 console.log('猫科の動物を探します')
-const selects: string[] = selectAnyType(animals2, type)
-for (let cat of selects) {
-    console.log(selects)
+const cats: string[] = selectAnyType(animals2,type1)
+for (let cat of cats) {
+    console.log(cat)
 }
 console.log('猫科の動物は以上です。\r\n')
+
 
 
 /*
@@ -81,9 +82,9 @@ console.log('猫科の動物は以上です。\r\n')
 const animals3: Animal[] = [{name: 'ぺんぎん', type: 'bird'},{name: 'ライオン', type: 'cat'},{name: '犬', type: 'dog'}]
 const type2 = 'dog'
 console.log('犬科の動物を探します')
-const selects2: string[] = selectAnyType(animals3, type2)
-for (let dog of selects2) {
-    console.log(selects2)
+const dogs2: string[] = selectAnyType(animals3, type2)
+for (let dog of dogs) {
+    console.log(dog)
 }
 console.log('犬科の動物は以上です。\r\n')
 

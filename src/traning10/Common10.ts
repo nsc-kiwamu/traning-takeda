@@ -72,18 +72,14 @@ export function selectCatType(animals: Animal[]): string[] {
     for (const animal2 of animals2) {
         if (animal2.type === 'cat') {
             selects.push(animal2.type)
+            selects.push(animal2.name)
         }
-        // else (animal2.type === 'dog'); {
-        //     selects.push(animal2.type)
-        // }
 
     }
 
 
     return selects
 }
-
-
 
 /**
  * 第一引数で取得した動物一覧をタイプ毎にまとめてmapで返却する
