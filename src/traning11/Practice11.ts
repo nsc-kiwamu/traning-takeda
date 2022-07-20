@@ -45,8 +45,9 @@ import { inNumOutStr, inNum2OutStr, inStrOutNum, inStr2OutNum, inCompanyEmployee
   5. inStr2OutNumを実行し、結果は以下となるように引数を設定すること .OK
   　13
 */
- const inStr2 = '1000000000000' // 13桁だから「13」と出力される
- const return5 = (inStrOutNum(inStr2))
+ const inStr2 = '1234567' // 13桁だから「13」と出力される
+ const inStr3 = '890123'
+ const return5 = (inStr2OutNum(inStr2,inStr3))
  console.log(`${return5}`)
 
 
@@ -54,10 +55,9 @@ import { inNumOutStr, inNum2OutStr, inStrOutNum, inStr2OutNum, inCompanyEmployee
   6. inCompanyEmployee2OutNumを実行し、結果は以下となるように引数を設定すること
   　22
 */
-//  const age = 11
-//  const age2 = 2
-//  const return6 = (inCompanyEmployee2OutNum(age,age2)) // パラメータで割り当てられないと表示されるのですがなぜでしょうか？
-//  console.log(`${return6}`)
+ const userY: CompanyEmployee = {name:'田中', age:22, gender:'女性'}
+ const userX: CompanyEmployee = {name:'山田', age:22, gender:'男性'}
+ console.log(inCompanyEmployee2OutNum(userY,userX))
 
 
 /*
@@ -71,10 +71,16 @@ import { inNumOutStr, inNum2OutStr, inStrOutNum, inStr2OutNum, inCompanyEmployee
   　　　年齢が25歳以下の社員は${名前}さんでした
 */
 
-const inCe1 = ['鈴木','山田','田中','林']
-const tgtAge = 25
-const return7 = inCompanyEmployeesNumberOutCompanyEmployees(inCe1,tgtAge)
-console.log(`${return7}`)
+ const userA: CompanyEmployee = {name:'田中', age:22, gender:'女性'}
+ const userB: CompanyEmployee = {name:'山田', age:30, gender:'男性'}
+ const userC: CompanyEmployee = {name:'鈴木', age:45, gender:'女性'}
+ const userD: CompanyEmployee = {name:'林', age:50, gender:'男性'}
+ const userList: CompanyEmployee[] = [userA, userB, userC, userD] // 第一引数
+ const age = 25 // 第二引数
+ const users: CompanyEmployee[] = inCompanyEmployeesNumberOutCompanyEmployees(userList,age)
+ for (let user of users) {
+      console.log(`年齢が25歳以下の社員は${user.name}さんでした`)
+ }
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
   yarn tsc 
