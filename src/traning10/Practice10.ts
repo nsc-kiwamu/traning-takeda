@@ -83,11 +83,10 @@ const animals3: Animal[] = [{name: 'ぺんぎん', type: 'bird'},{name: 'ライ�
 const type2 = 'dog'
 console.log('犬科の動物を探します')
 const dogs2: string[] = selectAnyType(animals3, type2)
-for (let dog of dogs) {
+for (let dog of dogs2) {
     console.log(dog)
 }
 console.log('犬科の動物は以上です。\r\n')
-
 
 /*
   8. filterTypeの内容を確認し、処理内容を理解する

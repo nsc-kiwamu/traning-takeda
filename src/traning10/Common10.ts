@@ -70,8 +70,7 @@ export function selectCatType(animals: Animal[]): string[] {
 
     // ここに処理を追加する
     for (const animal2 of animals2) {
-        if (animal2.type === 'cat') {
-            selects.push(animal2.type)
+        if (animal2.type === type) {
             selects.push(animal2.name)
         }
 
