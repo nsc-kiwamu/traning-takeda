@@ -103,7 +103,11 @@ if (users3[0].matchValue[0] > users3[1].matchValue[0]) {
     console.log(`${users3[1].name}さんの勝ちです\r\n`)
 } 
 
-  else {
+  else if (users3[0].matchValue[0] == users3[1].matchValue[0]){
+    console.log('引き分けです\r\n')
+} else if (users3[0].matchValue[1] == users3[1].matchValue[1]){
+    console.log('引き分けです\r\n')
+} else if (users3[0].matchValue[2] == users3[1].matchValue[2]){
     console.log('引き分けです\r\n')
 }
 
@@ -127,20 +131,23 @@ for (let user of users4) {
     // サイコロを振る
     const value = dice()
     console.log(`${user.name}さんがサイコロを振った結果は${value}です`)
+
+    if (max < value){
+        user.matchValue = [max]
+    }
     // 結果を格納する
     user.matchValue = [value]
 }
 
-// // for文追記
-// for (let max of users4) {
-//     // 結果を格納する
-//     max.matchValue = [value]
-//     if(max < value){
-//         console.log(`サイコロを振った中で一番大きな値が${value}に入る`)
-//     }
-// }
-// // サイコロを振って結果で勝負する
+for (let user of users4) {
+    // サイコロを振る
+    const value = dice()
+    console.log(`${user.name}さんがサイコロを振った結果は${value}です`)
+    // 結果を格納する
+    user.matchValue = [value]
+}
 
+// サイコロを振って結果で勝負する
 if (users4[0].matchValue[0] > users4[1].matchValue[0]) {
     console.log(`${users4[0].name}さんの勝ちです\r\n`)
 } else if (users4[0].matchValue[0] > users4[2].matchValue[0]) {
@@ -156,7 +163,13 @@ else if (users4[0].matchValue[0] > users4[3].matchValue[0]) {
     console.log('引き分けです\r\n')
 }
 
-
+// for (let user of users4) {
+//     // サイコロを振る
+//     const value = dice()
+//     console.log(`${user.name}さんがサイコロを振った結果は${value}です`)
+//     // 結果を格納する
+//     user.matchValue = [value]
+// }
 
 /*
   5. サンプルを参考に以下の条件を満たすように呼び出しをすること。.OK
