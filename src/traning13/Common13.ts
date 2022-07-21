@@ -28,3 +28,13 @@ export function makeRandomList(size: number, min:number, max:number): number[] {
 
     return retList
 }
+
+/** 竹田追記
+ * 引数で受け取った要素数の配列を値をランダムで作成する。
+ * ランダムで作成する値域は1～50とする。
+ * @param size 要素数
+ * @returns 引数で指定された要素数で値はランダム(1～30)の配列
+ */
+ export function makeRandomPra(size: number): number[] {
+    return makeRandomList(size, 1, 50)
+}

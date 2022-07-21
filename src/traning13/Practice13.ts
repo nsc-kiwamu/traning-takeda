@@ -1,4 +1,4 @@
-import { makeRandomList } from "./Common13.js"
+import { makeRandomList, Random } from "./Common13.js"
 /*
  アルゴリズム(バブルソート)
 
@@ -6,7 +6,7 @@ import { makeRandomList } from "./Common13.js"
   1. サンプルを参考に、要素数20、値域1～50のランダムの要素をもつ配列を作成しバブルソートで並び替えを実施する。
 */
 // 並び変えをするために値がランダムの配列を作成する。
- const sampleTgtList = makeRandomList(10,5,30)
+ const sampleTgtList = Random(10,1,50)
  console.log(`並び変え前のリスト:${sampleTgtList}`)
 
  for (let i = sampleTgtList.length -1; i <= 0; i--) {
