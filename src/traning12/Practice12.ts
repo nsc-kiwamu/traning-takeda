@@ -3,7 +3,7 @@ import { dice, gambler, card} from "./Common12.js";
  アルゴリズム
 
   <実施内容>
-  1. サンプルを参考に以下の条件を満たすように呼び出しをすること。
+  1. サンプルを参考に以下の条件を満たすように呼び出しをすること。 .OK
   　対戦者:2名
   　勝負方法:サイコロを1回振って大きな数値の出た方の勝ち
   　勝負結果:「～さんの負けです」か「引き分けです」を出力する
@@ -31,7 +31,7 @@ if (users[0].matchValue < users[1].matchValue) {
 
 
 /*
-  2. サンプルを参考に以下の条件を満たすように呼び出しをすること。
+  2. サンプルを参考に以下の条件を満たすように呼び出しをすること。 .OK
   　対戦者:2名
   　勝負方法:サイコロを2回振って合計が大きな数値の出た方の勝ち
   　勝負結果:「～さんの勝ちです」か「引き分けです」を出力する
@@ -39,28 +39,34 @@ if (users[0].matchValue < users[1].matchValue) {
 
 // 対戦者の作成
 console.log('問題2')
-const users2:gambler[] = [{name:'山田', coin:0, matchValue:[2]}, {name:'鈴木', coin:0, matchValue:[2]}]
+const users2:gambler[] = [{name:'山田', coin:0, matchValue:[1,2]}, {name:'鈴木', coin:0, matchValue:[1,2]}]
 // サイコロを振って結果を格納する
 for (let user of users2) {
     // サイコロを振る
     const value = dice()
     const value2 = dice()
-    console.log(`${user.name}さんがサイコロを振った結果は${value}です`)
-    console.log(`${user.name}さんがサイコロを振った結果は${value2}です`)
+    console.log(`${user.name}さんがサイコロを2回振った合計の結果は${value + value2}です`)
+   // console.log(`${user.name}さんがサイコロを振った結果は${value2}です`)
     // 結果を格納する
-    user.matchValue = [value]
+    user.matchValue = [value + value2]
 }
 // サイコロを振って結果で勝負する
-if (users2[0].matchValue < users2[1].matchValue) {
-    console.log(`${users2[1].name}さんの勝ちです\r\n`)
-} else if (users2[0].matchValue > users2[1].matchValue) {
+if (users2[0].matchValue[0] > users2[1].matchValue[0]) {
     console.log(`${users2[0].name}さんの勝ちです\r\n`)
-} else {
+} else if (users2[0].matchValue[0] < users2[1].matchValue[0]) {
+    console.log(`${users2[1].name}さんの勝ちです\r\n`)
+} else if (users2[0].matchValue[1] > users2[1].matchValue[1]) {
+    console.log(`${users2[0].name}さんの勝ちです\r\n`)
+} else if (users2[0].matchValue[1] < users2[1].matchValue[1]) {
+    console.log(`${users2[1].name}さんの勝ちです\r\n`)
+} 
+
+  else {
     console.log('引き分けです\r\n')
 }
 
 /*
-  3. サンプルを参考に以下の条件を満たすように呼び出しをすること。 .OK
+  3. サンプルを参考に以下の条件を満たすように呼び出しをすること。
   　対戦者:2名
   　勝負方法:サイコロを3回振って1回目～3回目をそれぞれ比較し、大きな数値を多く出した方の勝ち
   　　例)Aさんのサイコロの結果 1回目:2 2回目:2 3回目6
@@ -71,7 +77,7 @@ if (users2[0].matchValue < users2[1].matchValue) {
 
 // 対戦者の作成
 console.log('問題3')
-const users3:gambler[] = [{name:'田中', coin:0, matchValue:[3]}, {name:'林', coin:0, matchValue:[3]}] 
+const users3:gambler[] = [{name:'田中', coin:0, matchValue:[1,2,3]}, {name:'林', coin:0, matchValue:[1,2,3]}] 
 // サイコロを振って結果を格納する
 for (let user of users3) {
     // サイコロを振る
@@ -83,11 +89,21 @@ for (let user of users3) {
     user.matchValue = [value,value2,value3]
 }
 // サイコロを振って結果で勝負する
-if (users3[0].matchValue < users3[1].matchValue) {
-    console.log(`${users3[1].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue > users3[1].matchValue) {
+if (users3[0].matchValue[0] > users3[1].matchValue[0]) {
     console.log(`${users3[0].name}さんの勝ちです\r\n`)
-} else {
+} else if (users3[0].matchValue[1] < users3[1].matchValue[1]) {
+    console.log(`${users3[1].name}さんの勝ちです\r\n`)
+} else if (users3[0].matchValue[2] > users3[1].matchValue[2]) {
+    console.log(`${users3[0].name}さんの勝ちです\r\n`)
+} else if (users3[0].matchValue[0] < users3[1].matchValue[0]) {
+    console.log(`${users3[1].name}さんの勝ちです\r\n`)
+} else if (users3[0].matchValue[1] < users3[1].matchValue[1]) {
+    console.log(`${users3[1].name}さんの勝ちです\r\n`)
+} else if (users3[0].matchValue[2] < users3[1].matchValue[2]) {
+    console.log(`${users3[1].name}さんの勝ちです\r\n`)
+} 
+
+  else {
     console.log('引き分けです\r\n')
 }
 
@@ -103,7 +119,10 @@ if (users3[0].matchValue < users3[1].matchValue) {
 console.log('問題4')
 const users4:gambler[] = [{name:'上野', coin:0, matchValue:[1]}, {name:'高橋', coin:0, matchValue:[1]},
                           {name:'山本', coin:0, matchValue:[1]},{name:'中村', coin:0, matchValue:[1]}]
-// サイコロを振って結果を格納する
+// number型の変数を定義
+let max: number = 0
+
+ // サイコロを振って結果を格納する
 for (let user of users4) {
     // サイコロを振る
     const value = dice()
@@ -111,27 +130,36 @@ for (let user of users4) {
     // 結果を格納する
     user.matchValue = [value]
 }
-// サイコロを振って結果で勝負する
 
-if (users4[0].matchValue > users4[1].matchValue) {
-    console.log(`${users4[0].name}さんの勝ちです\r\n`)
-} else if (users4[0].matchValue < users4[2].matchValue) {
-    console.log(`${users4[1].name}さんの勝ちです\r\n`)
-} else if (users4[0].matchValue > users4[3].matchValue) {
-    console.log(`${users4[0].name}さんの勝ちです\r\n`)
-} else if (users4[1].matchValue < users4[4].matchValue) {
-    console.log(`${users4[1].name}さんの勝ちです\r\n`)
-} else if (users4[1].matchValue < users4[4].matchValue) {
-    console.log(`${users4[1].name}さんと${users4[1].name}さんの勝ちです\r\n`)
-} else {
+// // for文追記
+// for (let max of users4) {
+//     // 結果を格納する
+//     max.matchValue = [value]
+//     if(max < value){
+//         console.log(`サイコロを振った中で一番大きな値が${value}に入る`)
+//     }
+// }
+// // サイコロを振って結果で勝負する
 
+if (users4[0].matchValue[0] > users4[1].matchValue[0]) {
+    console.log(`${users4[0].name}さんの勝ちです\r\n`)
+} else if (users4[0].matchValue[0] > users4[2].matchValue[0]) {
+    console.log(`${users4[0].name}さんの勝ちです\r\n`)
+} else if (users4[0].matchValue[0] > users4[3].matchValue[0]) {
+    console.log(`${users4[0].name}さんの勝ちです\r\n`)
+} 
+else if (users4[0].matchValue[0] > users4[3].matchValue[0]) {
+    console.log(`${users4[0].name}さんと${users4[0].name}さんの勝ちです\r\n`)
+} 
+
+  else {
     console.log('引き分けです\r\n')
 }
 
 
 
 /*
-  5. サンプルを参考に以下の条件を満たすように呼び出しをすること。
+  5. サンプルを参考に以下の条件を満たすように呼び出しをすること。.OK
   　対戦者:2名
   　勝負方法:カードを1枚めくり大きな数値の出た人の勝ち
   　勝負結果:「～さんの勝ちです」か「引き分けです」を出力する
@@ -148,9 +176,9 @@ for (let user of users5) {
     user.matchValue = [value]
 }
 // サイコロを振って結果で勝負する
-if (users5[0].matchValue > users5[1].matchValue) {
+if (users5[0].matchValue[0] > users5[1].matchValue[0]) {
     console.log(`${users5[0].name}さんの勝ちです\r\n`)
-} else if (users5[0].matchValue < users5[1].matchValue) {
+} else if (users5[0].matchValue[0] < users5[1].matchValue[0]) {
     console.log(`${users5[1].name}さんの勝ちです\r\n`)
 } else {
     console.log('引き分けです\r\n')
