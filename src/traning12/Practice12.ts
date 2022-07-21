@@ -103,11 +103,9 @@ if (users3[0].matchValue[0] > users3[1].matchValue[0]) {
     console.log(`${users3[1].name}さんの勝ちです\r\n`)
 } 
 
-  else if (users3[0].matchValue[0] == users3[1].matchValue[0]){
-    console.log('引き分けです\r\n')
-} else if (users3[0].matchValue[1] == users3[1].matchValue[1]){
-    console.log('引き分けです\r\n')
-} else if (users3[0].matchValue[2] == users3[1].matchValue[2]){
+  else if (users3[0].matchValue[0] === users3[1].matchValue[0] &&
+           users3[0].matchValue[1] === users3[1].matchValue[1] &&
+           users3[0].matchValue[2] === users3[1].matchValue[2]){
     console.log('引き分けです\r\n')
 }
 
