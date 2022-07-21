@@ -72,7 +72,7 @@ import { inNumOutStr, inNum2OutStr, inStrOutNum, inStr2OutNum, inCompanyEmployee
 */
 
  const userA: CompanyEmployee = {name:'田中', age:22, gender:'女性'}
- const userB: CompanyEmployee = {name:'山田', age:30, gender:'男性'}
+ const userB: CompanyEmployee = {name:'山田', age:24, gender:'男性'}
  const userC: CompanyEmployee = {name:'鈴木', age:45, gender:'女性'}
  const userD: CompanyEmployee = {name:'林', age:50, gender:'男性'}
  const userList: CompanyEmployee[] = [userA, userB, userC, userD] // 第一引数
