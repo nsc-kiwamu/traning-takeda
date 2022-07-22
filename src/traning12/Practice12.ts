@@ -210,7 +210,7 @@ console.log('問題4')
 const users4:gambler[] = [{name:'上野', coin:0, matchValue:[1]}, {name:'高橋', coin:0, matchValue:[1]},
                           {name:'山本', coin:0, matchValue:[1]},{name:'中村', coin:0, matchValue:[1]}]
 // number型の変数を定義
-let max: number = 0
+let max: number = 6 // サイコロの最大値は6だから
 
  // サイコロを振って結果を格納する
 for (let user of users4) {  
@@ -219,52 +219,42 @@ for (let user of users4) {
     console.log(`${user.name}さんがサイコロを振った結果は${value}です`)
 
     if (max < value){ // maxよりもvalueの方が値が大きければ、最大値をvalueに入れる
-       max = value;
-    }
-    // 結果を格納する
+        max = value
+       // 結果を格納する
     user.matchValue = [value]
+    }
 }
 
 // 勝ち負け判定
-for (let max=0; max > 6; max++) { // サイコロの数字よりも出した数が大きければ
-    if (max < value){
-    console.log(`${users4[0].name}さんの勝ちです\r\n`)
+for (let value=0; max < 6; max++) { // サイコロの数字よりも出した数が大きければ // let value=0; max < 6; max++
+    if (users4[0].matchValue[0] == value){
+         console.log(`${users4[0].name}さんの勝ちです\r\n`) // 0が勝った場合
+    } else if (users4[1].matchValue[0] == value){
+         console.log(`${users4[1].name}さんの勝ちです\r\n`) // 1が勝った場合
+    } else if (users4[2].matchValue[0] == value){         
+         console.log(`${users4[2].name}さんの勝ちです\r\n`) // 2が勝った場合
+    } else if (users4[3].matchValue[0] == value){
+         console.log(`${users4[3].name}さんの勝ちです\r\n`) // 3が勝った場合
     }
-    else if (max == value) {
-    console.log(`${users4[0].name}さんと${users4[0].name}さんの勝ちです\r\n`)
-    }
-    else  {
-        console.log('引き分けです\r\n')
-    }
+
+      else if (max == value) {
+         console.log(`${users4[0].name}さんと${users4[1].name}さんの勝ちです\r\n`) // 0と1
+    } else if (max == value) {
+         console.log(`${users4[0].name}さんと${users4[2].name}さんの勝ちです\r\n`) // 0と2
+    } else if (max == value) {
+         console.log(`${users4[0].name}さんと${users4[3].name}さんの勝ちです\r\n`) // 0と3
+    } else if (max == value) {
+         console.log(`${users4[1].name}さんと${users4[2].name}さんの勝ちです\r\n`) // 1と2
+    } else if (max == value) {
+         console.log(`${users4[1].name}さんと${users4[3].name}さんの勝ちです\r\n`) // 1と3
+    } else if (max == value) {
+         console.log(`${users4[2].name}さんと${users4[3].name}さんの勝ちです\r\n`) // 2と3
+    } else if (max == value) {
+        console.log(`${users4[2].name}さんと${users4[3].name}さんの勝ちです\r\n`) // 2と3
+   }  else if (max == value) {
+}
 }
 
-
-
-//     if (users4[0].matchValue[0] > users4[1].matchValue[0]) {
-//         console.log(`${users4[0].name}さんの勝ちです\r\n`)
-//     } else if (users4[0].matchValue[0] > users4[2].matchValue[0]) {
-//         console.log(`${users4[0].name}さんの勝ちです\r\n`)
-//     } else if (users4[0].matchValue[0] > users4[3].matchValue[0]) {
-//         console.log(`${users4[0].name}さんの勝ちです\r\n`)
-//     } 
-//     else if (users4[0].matchValue[0] > users4[3].matchValue[0]) {
-//         console.log(`${users4[0].name}さんと${users4[0].name}さんの勝ちです\r\n`)
-//     } 
-// }
-
-// // 引き分けの場合　※保留
-
-//   else {
-//     console.log('引き分けです\r\n')
-// }
-
-// for (let user of users4) {
-//     // サイコロを振る
-//     const value = dice()
-//     console.log(`${user.name}さんがサイコロを振った結果は${value}です`)
-//     // 結果を格納する
-//     user.matchValue = [value]
-// }
 
 /*
   5. サンプルを参考に以下の条件を満たすように呼び出しをすること。.OK
