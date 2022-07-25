@@ -72,3 +72,8 @@ if (pointA > pointB) {
 } else {
     console.log('引き分け')
 }
+
+/*※1 「Ctrl + @」でターミナルを開き以下を実行
+  yarn tsc 
+  node dist/traning12/Sample12.js
+ */

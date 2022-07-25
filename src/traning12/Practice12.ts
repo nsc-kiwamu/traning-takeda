@@ -84,46 +84,20 @@ for (let user of users3) {
     // 結果を格納する
     user.matchValue = [value,value2,value3]
 }
+
+
 // サイコロを振って結果で勝負する
 if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
     users3[0].matchValue[1] > users3[1].matchValue[1] &&
     users3[0].matchValue[2] > users3[1].matchValue[2]){   //AAA
-        console.log(`${users3[0].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
-           users3[0].matchValue[1] > users3[1].matchValue[1] &&
-           users3[0].matchValue[2] < users3[1].matchValue[2]){  //AAB
-        console.log(`${users3[0].name}さんの勝ちです\r\n`)
+    console.log(`${users3[0].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
            users3[0].matchValue[1] < users3[1].matchValue[1] &&
            users3[0].matchValue[2] > users3[1].matchValue[2]){    //ABA
         console.log(`${users3[0].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] < users3[1].matchValue[0] &&
-           users3[0].matchValue[1] > users3[1].matchValue[1] &&
-           users3[0].matchValue[2] > users3[1].matchValue[2]){   //BAA
-        console.log(`${users3[0].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
-          users3[0].matchValue[1] > users3[1].matchValue[1] &&   //AA-
-          users3[0].matchValue[2] == users3[1].matchValue[2]){
-        console.log(`${users3[0].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
-          users3[0].matchValue[1] > users3[1].matchValue[1] && //-AA
-          users3[0].matchValue[2] > users3[1].matchValue[2]){
-        console.log(`${users3[0].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
-           users3[0].matchValue[1] == users3[1].matchValue[1] &&
-           users3[0].matchValue[2] > users3[1].matchValue[2]){ //A-A
-        console.log(`${users3[0].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
            users3[0].matchValue[1] == users3[1].matchValue[1] &&
            users3[0].matchValue[2] > users3[1].matchValue[2]){ //--A
-        console.log(`${users3[0].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
-           users3[0].matchValue[1] > users3[1].matchValue[1] &&
-           users3[0].matchValue[2] == users3[1].matchValue[2]){ //-A=
-        console.log(`${users3[0].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
-           users3[0].matchValue[1] == users3[1].matchValue[1] &&
-           users3[0].matchValue[2] == users3[1].matchValue[2]){ //A--
         console.log(`${users3[0].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] < users3[1].matchValue[0] &&
            users3[0].matchValue[1] < users3[1].matchValue[1] &&
@@ -132,38 +106,14 @@ if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
 } else if (users3[0].matchValue[0] < users3[1].matchValue[0] &&
            users3[0].matchValue[1] < users3[1].matchValue[1] &&
            users3[0].matchValue[2] > users3[1].matchValue[2]){ //BBA
-        console.log(`${users3[1].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] < users3[1].matchValue[0] &&
-           users3[0].matchValue[1] > users3[1].matchValue[1] && //BAB
-           users3[0].matchValue[2] < users3[1].matchValue[2]){
-        console.log(`${users3[1].name}さんの勝ちです\r\n`)                                       
-} else if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
-           users3[0].matchValue[1] < users3[1].matchValue[1] &&
-           users3[0].matchValue[2] < users3[1].matchValue[2]){ //ABB
-        console.log(`${users3[1].name}さんの勝ちです\r\n`)
+        console.log(`${users3[1].name}さんの勝ちです\r\n`)                                 
 } else if (users3[0].matchValue[0] < users3[1].matchValue[0] &&
            users3[0].matchValue[1] < users3[1].matchValue[1] &&
            users3[0].matchValue[2] == users3[1].matchValue[2]){ //BB-
         console.log(`${users3[1].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
-           users3[0].matchValue[1] < users3[1].matchValue[1] &&
-           users3[0].matchValue[2] < users3[1].matchValue[2]){  //-BB
-        console.log(`${users3[1].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] < users3[1].matchValue[0] &&
-           users3[0].matchValue[1] == users3[1].matchValue[1] &&
-           users3[0].matchValue[2] < users3[1].matchValue[2]){  //B-B
-        console.log(`${users3[1].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
            users3[0].matchValue[1] == users3[1].matchValue[1] &&
            users3[0].matchValue[2] < users3[1].matchValue[2]){  //--B
-        console.log(`${users3[1].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
-           users3[0].matchValue[1] < users3[1].matchValue[1] &&
-           users3[0].matchValue[2] == users3[1].matchValue[2]){ //-B-
-        console.log(`${users3[1].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] < users3[1].matchValue[0] &&
-           users3[0].matchValue[1] == users3[1].matchValue[1] && //B--
-           users3[0].matchValue[2] == users3[1].matchValue[2]){
         console.log(`${users3[1].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
            users3[0].matchValue[1] == users3[1].matchValue[1] &&
@@ -173,28 +123,7 @@ if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
            users3[0].matchValue[1] > users3[1].matchValue[1] &&
            users3[0].matchValue[2] < users3[1].matchValue[2]){ // -AB
         console.log(`引き分けです\r\n`)
-} else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
-           users3[0].matchValue[1] < users3[1].matchValue[1] &&
-           users3[0].matchValue[2] > users3[1].matchValue[2]){  //-BA
-        console.log(`引き分けです\r\n`)
-} else if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
-           users3[0].matchValue[1] == users3[1].matchValue[1] &&
-           users3[0].matchValue[2] < users3[1].matchValue[2]){ //A-B
-        console.log(`引き分けです\r\n`)
-} else if (users3[0].matchValue[0] < users3[1].matchValue[0] &&
-           users3[0].matchValue[1] == users3[1].matchValue[1] && 
-           users3[0].matchValue[2] > users3[1].matchValue[2]){  //B-A
-        console.log(`引き分けです\r\n`)
-} else if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
-           users3[0].matchValue[1] < users3[1].matchValue[1] &&
-           users3[0].matchValue[2] == users3[1].matchValue[2]){  // AB-
-        console.log(`引き分けです\r\n`) 
-} else if (users3[0].matchValue[0] < users3[1].matchValue[0] &&
-           users3[0].matchValue[1] > users3[1].matchValue[1] &&
-           users3[2].matchValue[0] == users3[1].matchValue[2]){  //BA=
-        console.log(`引き分けです\r\n`)
-}
-
+} 
 
 
 /*
@@ -207,8 +136,8 @@ if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
 */
 // 対戦者の作成
 console.log('問題4')
-const users4:gambler[] = [{name:'上野', coin:0, matchValue:[1]}, {name:'高橋', coin:0, matchValue:[1]},
-                          {name:'山本', coin:0, matchValue:[1]},{name:'中村', coin:0, matchValue:[1]}]
+const users4:gambler[] = [{name:'上野', coin:0, matchValue:[0]}, {name:'高橋', coin:0, matchValue:[0]},
+                          {name:'山本', coin:0, matchValue:[0]},{name:'中村', coin:0, matchValue:[0]}]
 // number型の変数を定義
 let max: number = 0 // サイコロの最大値は6だから
 
@@ -217,7 +146,8 @@ for (let user of users4) {
     // サイコロを振る
     const value = dice()
     console.log(`${user.name}さんがサイコロを振った結果は${value}です`)
-    
+    user.matchValue = [value]
+
     // 振って出た値（value）を最大値（max）と比較する
     if (max < value){ // maxよりもvalueの方が値が大きければ、最大値をvalueに入れる
         max = value
@@ -230,32 +160,15 @@ for (let user of users4) {
 
 
 // 勝ち負け判定
-for (let user = 0; user < 3; user++) { // 4人分繰り返す
-    if (users4[0].matchValue[0] == max){ // 最大値と同じであれば勝ち
-        console.log(`${users4[0].name}さんの勝ちです\r\n`) // 一人勝ちの場合
+for (let i = 0; i < users4.length; i++) { // 4人分繰り返す
+    if (users.length === max){ // 最大値と同じであれば勝ち
+     console.log(`${users4[].name}さんの勝ちです\r\n`) // 一人勝ちの場合
     }
 
-//     else if (max == max) {
-//         console.log(`${users4[0].name}さんと${users4[1].name}さんの勝ちです\r\n`) // 0と1
-//    } else if (max == max) {
-//         console.log(`${users4[0].name}さんと${users4[2].name}さんの勝ちです\r\n`) // 0と2
-//    } else if (max == max) {
-//         console.log(`${users4[0].name}さんと${users4[3].name}さんの勝ちです\r\n`) // 0と3
-//    } else if (max == max) {
-//         console.log(`${users4[1].name}さんと${users4[2].name}さんの勝ちです\r\n`) // 1と2
-//    } else if (max == max) {
-//         console.log(`${users4[1].name}さんと${users4[3].name}さんの勝ちです\r\n`) // 1と3
-//    } else if (max == max) {
-//         console.log(`${users4[2].name}さんと${users4[3].name}さんの勝ちです\r\n`) // 2と3
-//    } else if (max == max) {
-//        console.log(`${users4[2].name}さんと${users4[3].name}さんの勝ちです\r\n`) // 2と3
-//   }  
+    else{
+     console.log('引き分けです\r\n')
+    }
 }
-//console.log(`${users4[0].name}さんの勝ちです\r\n`) // 一人勝ちの場合
-
-// console.log(`${users4[1].name}さんの勝ちです\r\n`)
-// console.log(`${users4[2].name}さんの勝ちです\r\n`)
-// console.log(`${users4[3].name}さんの勝ちです\r\n`)
 
 /*
   5. サンプルを参考に以下の条件を満たすように呼び出しをすること。.OK
