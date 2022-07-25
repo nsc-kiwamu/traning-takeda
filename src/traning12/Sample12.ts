@@ -73,6 +73,16 @@ if (pointA > pointB) {
     console.log('引き分け')
 }
 
+// 3×3×3のマトリクスを作成する
+const pattern:string[] = ['Aが勝ち','Bが勝ち','引き分け']
+for (let i = 0; i < pattern.length; i++) {
+    for (let j = 0; j < pattern.length; j++) {
+        for (let k = 0; k < pattern.length; k++) {
+            console.log(`${pattern[i]}\t${pattern[j]}\t${pattern[k]}`)
+        }
+    }
+}
+
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
   yarn tsc 
   node dist/traning12/Sample12.js
