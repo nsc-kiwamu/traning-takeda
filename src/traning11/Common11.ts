@@ -89,6 +89,12 @@ export function inNumOutStr(inNum1: number): string {
  * @param inCe2 社員2
  * @returns 平均年齢
  */
+  type CompanyEmployee = {
+    name: string;
+    age: number;
+    gender: string;
+  }
+
 export function inCompanyEmployee2OutNum(inCe1: CompanyEmployee,inCe2: CompanyEmployee): number {
     //社員1の年齢+社員2の年齢 ÷ 人数
     return (inCe1.age + inCe2.age) / 2
@@ -110,3 +116,9 @@ export function inCompanyEmployee2OutNum(inCe1: CompanyEmployee,inCe2: CompanyEm
     }
     return ret
 }
+
+
+/*※1 「Ctrl + @」でターミナルを開き以下を実行
+  yarn tsc 
+  node dist/traning11/Practice11.js
+ */
