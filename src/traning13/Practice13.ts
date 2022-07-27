@@ -19,12 +19,12 @@ for (let i = sampleTgtList.length -1; i >= 0; i--) { // 20から1つずつ数を
           sampleTgtList[j + 1] = sampleTgtList[j]
           sampleTgtList[j] = tmpVal
       }
+     // console.log('テスト(j)', (j))
+     // console.log('テスト２(i)', (i))
   }
 }
 
 console.log(`並び変え後のリスト:${sampleTgtList}\r\n`)
-
-
 
 /*
   2. サンプルを参考に値を降順で並び変えるバブルソートで並び替えを実施する。(サンプルのものは昇順)
