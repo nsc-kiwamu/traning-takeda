@@ -89,46 +89,46 @@ for (let user of users3) {
 
 // サイコロを振って結果で勝負する
 if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
-    users3[0].matchValue[1] > users3[1].matchValue[1]){   //AAA
+    users3[0].matchValue[1] > users3[1].matchValue[1]){   //2
         console.log(`${users3[0].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
-           users3[0].matchValue[2] > users3[1].matchValue[2]){    //ABA
+           users3[0].matchValue[2] > users3[1].matchValue[2]){    //4
         console.log(`${users3[0].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[1] > users3[1].matchValue[1] &&
-           users3[0].matchValue[2] > users3[1].matchValue[2]){   //BAA
+           users3[0].matchValue[2] > users3[1].matchValue[2]){   //10
         console.log(`${users3[0].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
            users3[0].matchValue[1] == users3[1].matchValue[1] &&
-           users3[0].matchValue[2] > users3[1].matchValue[2]){ //--A　// １回戦目、２回戦目で引き分け。３回戦目の結果次第で結果が変わるため条件式を減らさずそのままにしています。
+           users3[0].matchValue[2] > users3[1].matchValue[2]){ //25
         console.log(`${users3[0].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
            users3[0].matchValue[1] > users3[1].matchValue[1] &&
-           users3[0].matchValue[2] == users3[1].matchValue[2]){ //-A- // １回戦目で引き分け、２回戦目でAさんが勝っているので３回戦目の結果次第で結果が変わるため条件式を減らさずそのままにしています。
+           users3[0].matchValue[2] == users3[1].matchValue[2]){ //21 
         console.log(`${users3[0].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
            users3[0].matchValue[1] == users3[1].matchValue[1] &&
-           users3[0].matchValue[2] == users3[1].matchValue[2]){ //A--　// 上記と同じくそのまま
+           users3[0].matchValue[2] == users3[1].matchValue[2]){ //9
         console.log(`${users3[0].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] < users3[1].matchValue[0] &&
-           users3[0].matchValue[1] < users3[1].matchValue[1] ){ //BBB
+           users3[0].matchValue[1] < users3[1].matchValue[1] ){ //13
         console.log(`${users3[1].name}さんの勝ちです\r\n`)
-} else if (users3[0].matchValue[0] < users3[1].matchValue[0] && //BAB
+} else if (users3[0].matchValue[0] < users3[1].matchValue[0] && //11
            users3[0].matchValue[2] < users3[1].matchValue[2]){
         console.log(`${users3[1].name}さんの勝ちです\r\n`)                                       
 } else if (users3[0].matchValue[1] < users3[1].matchValue[1] &&
-           users3[0].matchValue[2] < users3[1].matchValue[2]){ //ABB
+           users3[0].matchValue[2] < users3[1].matchValue[2]){ //5
         console.log(`${users3[1].name}さんの勝ちです\r\n`)
 }  else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
            users3[0].matchValue[1] == users3[1].matchValue[1] &&
-           users3[0].matchValue[2] < users3[1].matchValue[2]){  //--B
+           users3[0].matchValue[2] < users3[1].matchValue[2]){  //26
         console.log(`${users3[1].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] == users3[1].matchValue[0] &&
            users3[0].matchValue[1] < users3[1].matchValue[1] &&
-           users3[0].matchValue[2] == users3[1].matchValue[2]){ //-B-
+           users3[0].matchValue[2] == users3[1].matchValue[2]){ //24
         console.log(`${users3[1].name}さんの勝ちです\r\n`)
 } else if (users3[0].matchValue[0] < users3[1].matchValue[0] &&
-           users3[0].matchValue[1] == users3[1].matchValue[1] && //B--
-           users3[0].matchValue[2] == users3[1].matchValue[2]){
+           users3[0].matchValue[1] == users3[1].matchValue[1] &&
+           users3[0].matchValue[2] == users3[1].matchValue[2]){ //18
         console.log(`${users3[1].name}さんの勝ちです\r\n`)
 } 
 
@@ -169,24 +169,28 @@ for (let user of users4) {
 //ここまでOK（最大値も取れている）
 
 // 引き分けの場合の処理
-// if(users4[i].matchValue[i] === users4[i].matchValue[i]){
-//     console.log('引き分けです\r\n')
-//  }
-// else {
+if(users4[0].matchValue[0] === users4[1].matchValue[0] &&
+   users4[0].matchValue[0] === users4[2].matchValue[0] &&
+   users4[0].matchValue[0] === users4[3].matchValue[0] &&
+   users4[1].matchValue[0] === users4[2].matchValue[0] &&
+   users4[1].matchValue[0] === users4[3].matchValue[0] &&
+   users4[2].matchValue[0] === users4[3].matchValue[0]){
+    console.log('引き分けです\r\n')
+ }
+else {
 
 // 勝ち負け判定
 for (let i = 0; i < users4.length; i++) { // 4人分繰り返す
     if (users4[i].matchValue[0] === max){ // 最大値と同じであれば勝ち
      console.log(`${users4[i].name}さんの勝ちです\r\n`) // 1人勝ちの場合
     }
-    // 2人の勝者が出た場合の処理
-    else if (users4[i].matchValue[0] === max &&
-             max === max){
-     console.log(`${users4[i].name}さんと${users4[i].name}さんの勝ちです\r\n`) // 2人が勝った場合
+    // 2人目の勝者が出た場合の処理
+    else if (users4[i].matchValue[0] === max){
+     console.log(`${users4[i].name}さんの勝ちです\r\n`) // もう一人が勝った場合
     }
-}
+  }
 
-// }
+}
 
 /*
   5. サンプルを参考に以下の条件を満たすように呼び出しをすること。.OK
