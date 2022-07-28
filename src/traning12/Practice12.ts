@@ -179,7 +179,7 @@ else {
 // 勝ち負け判定
 for (let i = 0; i < users4.length; i++) { // 4人分繰り返す
     if (users4[i].matchValue[0] === max){ // 最大値と同じであれば勝ち
-     console.log(`${users4[i].name}さんの勝ちです\r\n`) // 1人勝ちの場合
+     console.log(`${users4[i].name}さんの勝ちです\r\n`)
     }
   }
 
