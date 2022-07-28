@@ -171,10 +171,7 @@ for (let user of users4) {
 // 引き分けの場合の処理
 if(users4[0].matchValue[0] === users4[1].matchValue[0] &&
    users4[0].matchValue[0] === users4[2].matchValue[0] &&
-   users4[0].matchValue[0] === users4[3].matchValue[0] &&
-   users4[1].matchValue[0] === users4[2].matchValue[0] &&
-   users4[1].matchValue[0] === users4[3].matchValue[0] &&
-   users4[2].matchValue[0] === users4[3].matchValue[0]){
+   users4[0].matchValue[0] === users4[3].matchValue[0]){
     console.log('引き分けです\r\n')
  }
 else {
@@ -183,10 +180,6 @@ else {
 for (let i = 0; i < users4.length; i++) { // 4人分繰り返す
     if (users4[i].matchValue[0] === max){ // 最大値と同じであれば勝ち
      console.log(`${users4[i].name}さんの勝ちです\r\n`) // 1人勝ちの場合
-    }
-    // 2人目の勝者が出た場合の処理
-    else if (users4[i].matchValue[0] === max){
-     console.log(`${users4[i].name}さんの勝ちです\r\n`) // もう一人が勝った場合
     }
   }
 
