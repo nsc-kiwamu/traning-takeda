@@ -10,7 +10,7 @@ const sampleTgtList = makeRandomList(20,1,50)
 console.log(`並び変え前のリスト:${sampleTgtList}`)
 
 for (let i = sampleTgtList.length -1; i >= 0; i--) { // 20から1つずつ数を減らしながら、出力
-  console.log(`----------------- 比較対象の最終index定義(i)=${i}`)
+ // console.log(`----------------- 比較対象の最終index定義(i)=${i}`)
   // 隣り合う要素を比較
   for (let j = 0; j < i; j++) { // このjとはなんでしょうか？隣り合ったiの値とjの値を比べるためのものでしょうか？
     console.log(`隣り合う値の比較 j=${j} j番目の値=${sampleTgtList[j]} j+1番目の値=${sampleTgtList[j+1]}`)
