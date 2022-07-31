@@ -1,6 +1,7 @@
 import { makeRandom } from "../traning12/Common12.js"
 
 
+
 /**
  * 引数で受け取った要素数の配列を値をランダムで作成する。
  * ランダムで作成する値域は1～30とする。
@@ -28,3 +29,4 @@ export function makeRandomList(size: number, min:number, max:number): number[] {
 
     return retList
 }
+

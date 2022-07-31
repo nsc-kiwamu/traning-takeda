@@ -45,3 +45,9 @@ for (let i = sampleTgtList.length -1; i >= 0; i--) {
 }
 
 console.log(`並び変え後のリスト:${sampleTgtList}`)
+
+
+/*※1 「Ctrl + @」でターミナルを開き以下を実行
+  yarn tsc 
+  node dist/traning13/Sample13.js
+ */
