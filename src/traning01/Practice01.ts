@@ -7,30 +7,16 @@
  */
 
  // Hello world(string)
- const sample01: String = 'Hello World(string)'
- console.log(sample01)
 
  // Hello world(string連結)
- const samplefirst: string = 'Hello'
- const samplelatter: string = 'World(string連結)'
- console.log(samplefirst + samplelatter)
 
  // Hello world(string再代入)
- let stringsami: string = 'Hello'
- stringsami = stringsami + 'World(string再代入)'
- console.log(stringsami)
 
  // Hello world(number)1回目
- let samplenumber: number = 1
- console.log("Hello World(number)" + samplenumber + "回目")
 
  // Hello world(number)2回目
- samplenumber += 1
- console.log("Hello World(number)" + samplenumber + "回目")
 
  // Hello world(number)3回目
- samplenumber += 1
- console.log(`Hello World(number)${samplenumber}回目`)
 
  
  /*※1 「Ctrl + @」でターミナルを開き以下を実行
