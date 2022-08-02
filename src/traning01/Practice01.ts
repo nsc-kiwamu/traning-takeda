@@ -7,30 +7,30 @@
  */
 
  // Hello world(string)
- const sample01: String = 'Hello World(string)'
- console.log(sample01)
+ const stringSample: string = 'Hello world(String)'
+ console.log(stringSample)
 
  // Hello world(string連結)
- const samplefirst: string = 'Hello'
- const samplelatter: string = 'World(string連結)'
- console.log(samplefirst + samplelatter)
+ const stringSample2: string = "Hello"
+ const stringSample3: string = "world(string連結)"
+ console.log(stringSample2 + stringSample3)
 
  // Hello world(string再代入)
- let stringsami: string = 'Hello'
- stringsami = stringsami + 'World(string再代入)'
- console.log(stringsami)
+ let stringSample4: string = "Hello"
+ stringSample4 = stringSample4 + "world(string再代入)"
+ console.log(stringSample4)
 
  // Hello world(number)1回目
- let samplenumber: number = 1
- console.log("Hello World(number)" + samplenumber + "回目")
+  let numberSample: number = 1
+  console.log("Hello world(number)" + numberSample + "回目")
 
  // Hello world(number)2回目
- samplenumber += 1
- console.log("Hello World(number)" + samplenumber + "回目")
+  numberSample +=1
+  console.log("Hello world(number)" + numberSample + "回目")
 
  // Hello world(number)3回目
- samplenumber += 1
- console.log(`Hello World(number)${samplenumber}回目`)
+ numberSample +=1
+ console.log(`Hello world(number)${numberSample}回目`)
 
  
  /*※1 「Ctrl + @」でターミナルを開き以下を実行

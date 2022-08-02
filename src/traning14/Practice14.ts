@@ -1,3 +1,5 @@
+import { makeRandomList } from "./Common13.js"
+
 /*
  アルゴリズム(素数判定)
 
@@ -6,8 +8,6 @@
 */
 // https://noumenon-th.net/programming/2018/04/30/prime01/
 // 上記サイトを参考にしました。
-
-import { makeRandomList } from "../traning13/Common13";
 
 function getPrime(){
     let n,i;
@@ -30,21 +30,6 @@ function getPrime(){
 /*
   2. 要素数10個で値域が1～50までのランダムな値をもつnumber型の配列を作成し、素数をコンソール出力するプログラムを作成する
 */
-// size ・・・要素数
-function makeList(size: number): number[]{
-  return makeRandomList(size, 1, 50)
-}
-
-// min:ランダム値の最小  max:ランダム値の最大
-function makeRandomList(size: number, min: number, max: number): number[] {
-  const retList: number[] = []
-
-  for (let i = 0; i < size; i++){
-    retList.push(makeRandom(min, max))
-  }
-return retList
-}
-
 
 function randomNumber(){
   const SampleRandom = makeRandomList(10,1,50)  // number[10]とすることで、要素数を指定？
