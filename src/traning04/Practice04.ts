@@ -10,19 +10,18 @@
 */
 
 // 配列の中身を表示 for文でのループ(number)
-const arraySampleNum: number[] = [1,2,3,4,5,6,7,8,9,10]
-for (let i = 0; i < arraySampleNum.length; i++){
-    console.log(arraySampleNum[i])
+const sampleArrayNumber: number[] = [1,2,3,4,5,6,7,8,9,10]
+for (const num of sampleArrayNumber) {
+  console.log(num)
 }
-
 
 // 配列の中身を表示 通常のfor-of文(string)
-const arraySampleStr: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも']
-for (const str of arraySampleStr) {
-    console.log(str)
+const sampleArrayString: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも']
+for (let i = 0; i < sampleArrayString.length; i++) {
+  console.log(sampleArrayString[i])
 }
 
-// ここまでは完成
+
 
 
 /*
@@ -36,42 +35,34 @@ for (const str of arraySampleStr) {
  すいか:1個
  */
 
- // 調べてもどのように書けばいいかわかりませんでした
- // 配列の中身を表示 for文でのループ(string)
+ const sampleFruit: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも','すいか']
+ let Fruit1: number = 0 // りんご
+ let Fruit2: number = 0 // いちご
+ let Fruit3: number = 0 // ぶどう
+ let Fruit4: number = 0 // もも
+ let Fruit5: number = 0 // すいか
 
-const chaSampleStr: string[] = ['りんご','いちご','りんご','ぶどう','もも','りんご','いちご','もも','すいか']
-let chaSampleNum01: number = 0 // りんご
-let chaSampleNum02: number = 0 // いちご
-let chaSampleNum03: number = 0 // ぶどう
-let chaSampleNum04: number = 0 // もも
-let chaSampleNum05: number = 0 // すいか
-for (let i = 0; i < chaSampleStr.length; i++){
-
- if (chaSampleStr[i] === 'りんご' ){
-    chaSampleNum01 = chaSampleNum01 + 1
- }
-  else if(chaSampleStr[i] === 'いちご'){
-    chaSampleNum02 = chaSampleNum02 + 1
- }
-  else if(chaSampleStr[i] === 'ぶどう'){
-    chaSampleNum03 = chaSampleNum03 + 1
- }
-  else if(chaSampleStr[i] === 'もも'){
-    chaSampleNum04 = chaSampleNum04 + 1
- }
-  else if(chaSampleStr[i] === 'すいか'){
-    chaSampleNum05 = chaSampleNum05 + 1 
- }
-
-
-
+ for (let i = 0; sampleFruit.length; i++){
+  if (sampleFruit[i] === "りんご"){
+    Fruit1 = Fruit1 + 1
+  } else if (sampleFruit[i] === "いちご"){
+    Fruit2 = Fruit2 + 1
+  } else if (sampleFruit[i] === "ぶどう"){
+    Fruit3 = Fruit3 + 1
+  } else if (sampleFruit[i] === "もも"){
+    Fruit4 = Fruit4 + 1
+  } else if (sampleFruit[i] === "すいか"){
+    Fruit5 = Fruit5 + 1
+  } 
 }
 
-console.log('りんご：' + chaSampleNum01 + '個')
-console.log('いちご：' + chaSampleNum02 + '個')
-console.log('ぶどう：' + chaSampleNum03 + '個')
-console.log('もも：' + chaSampleNum04 + '個')
-console.log('すいか：' + chaSampleNum05 + '個')
+ console.log("りんご：" + Fruit1 + "個")
+ console.log("いちご：" + Fruit2 + "個")
+ console.log("ぶどう：" + Fruit3 + "個")
+ console.log("もも：'" + Fruit4 + "個")
+ console.log("すいか：" + Fruit5 + "個")
+
+ 
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
   yarn tsc 
