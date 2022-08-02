@@ -9,7 +9,11 @@
  */
 
 // 1～100の加算結果は、5050ですと表示
-
+let samplePlus: number = 0
+for (let i =0; i <= 100; i++){
+    samplePlus += i
+}
+console.log(`1~100の加算結果は、${samplePlus}です`)
 
 /*
  <チャレンジ問題>
@@ -28,7 +32,21 @@
 // 5の倍数「Buzz」
 // 3の倍数であり、5の倍数でもある「FizzBuzz」
 
+let sampleFizzBuzz: number = 0
+for(let i = 0; i <= 15; i++) {
+    if (i % 15 === 0) {
+        console.log("FizzBuzz")
+    } else if (i % 3 === 0) {
+        console.log("Fizz") 
+    } else if (i % 5 === 0) {
+        console.log("Buzz")
+    }
+    
+    else {
+        console.log(i)
+    }
 
+}
 
 
 /*
@@ -52,6 +70,5 @@
 
  /*※1 「Ctrl + @」でターミナルを開き以下を実行
   yarn tsc 
-  
   node dist/traning03/Practice03.js
  */
