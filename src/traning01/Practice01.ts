@@ -6,11 +6,11 @@
  以下が出力されるように作成すること
  */
 
- // Hello world(string)
+ // Hello world(string連結)
  const stringSample: string = 'Hello world(String)'
  console.log(stringSample)
 
- // Hello world(string連結)
+// Hello world(string連結)
  const stringSample2: string = "Hello"
  const stringSample3: string = "world(string連結)"
  console.log(stringSample2 + stringSample3)
@@ -21,12 +21,12 @@
  console.log(stringSample4)
 
  // Hello world(number)1回目
-  let numberSample: number = 1
-  console.log("Hello world(number)" + numberSample + "回目")
+ let numberSample: number = 1
+ console.log("Hello world(number)" + numberSample + "回目")
 
  // Hello world(number)2回目
-  numberSample +=1
-  console.log("Hello world(number)" + numberSample + "回目")
+ numberSample +=1
+ console.log("Hello world(number)" + numberSample + "回目")
 
  // Hello world(number)3回目
  numberSample +=1
