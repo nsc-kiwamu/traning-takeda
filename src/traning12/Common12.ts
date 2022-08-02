@@ -25,3 +25,11 @@ export function makeRandom(min: number, max: number) {
 export function dice(): number {
     return makeRandom(1, 6)
 }
+
+/**
+ * 疑似的にカードをめくった結果を返却する
+ * @returns 1～13の整数
+ */
+ export function card(): number {
+    return makeRandom(1, 13)
+}
