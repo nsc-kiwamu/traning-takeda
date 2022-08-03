@@ -55,7 +55,8 @@ for (let i = 0; i < sampleArrayString.length; i++) {
     Fruit5 = Fruit5 + 1
   } 
 }
-
+// 58行目より上で、console.log()とすると出力される
+// 58行目以降で、console.log()とすると出力されない
  console.log("りんご：" + Fruit1 + "個")
  console.log("いちご：" + Fruit2 + "個")
  console.log("ぶどう：" + Fruit3 + "個")
