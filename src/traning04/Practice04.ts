@@ -42,7 +42,7 @@ for (let i = 0; i < sampleArrayString.length; i++) {
  let Fruit4: number = 0 // もも
  let Fruit5: number = 0 // すいか
 
- for (let i = 0; sampleFruit.length; i++){
+ for (let i = 0; i < sampleFruit.length; i++){
   if (sampleFruit[i] === "りんご"){
     Fruit1 = Fruit1 + 1
   } else if (sampleFruit[i] === "いちご"){
