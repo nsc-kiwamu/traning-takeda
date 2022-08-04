@@ -1,4 +1,4 @@
-import { formatDate, selectDogType, Animal, selectAnyType, filterType } from "./Common10.js";
+import { formatDate, selectDogType, Animal, selectAnyType } from "./Common10.js";
 
 /*
  色々な型と繰り返し
