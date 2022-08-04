@@ -8,6 +8,25 @@ import { dice, gambler, card} from "./Common12.js";
   　勝負方法:サイコロを1回振って大きな数値の出た方の勝ち
   　勝負結果:「～さんの負けです」か「引き分けです」を出力する
 */
+ // 対戦者の作成
+ const users:gambler[] = [{name:'白井', coin:0, matchValue:[0]}, {name:'遠藤', coin:0, matchValue:[0]}]
+ // サイコロを振って結果を格納する
+ for (let user of users) {
+     // サイコロを振る
+     const value = dice()
+     console.log(`${user.name}さんがサイコロを振った結果は${value}です`)
+     // 結果を格納する
+     user.matchValue = [value]
+ }
+ // サイコロを振って結果で勝負する
+ if (users[0].matchValue > users[1].matchValue) {
+     console.log(`${users[0].name}さんの勝ちです`)
+ } else if (users[0].matchValue < users[1].matchValue) {
+     console.log(`${users[1].name}さんの勝ちです`)
+ } else {
+     console.log('引き分けです')
+ }
+
 
 /*
   2. サンプルを参考に以下の条件を満たすように呼び出しをすること。 .OK
