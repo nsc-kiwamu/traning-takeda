@@ -9,7 +9,7 @@ import { formatDate, selectDogType, Animal, selectAnyType } from "./Common10.js"
  const year = 2022
  const month = 7
  const day = 12
- formatDate(year,month, day)
+ console.log(formatDate(year,month,day))
  
 
 /*
@@ -20,7 +20,7 @@ import { formatDate, selectDogType, Animal, selectAnyType } from "./Common10.js"
  const year2 = 2022
  const month2 = 15
  const day2 = 4
- formatDate(year2,month2,day2)
+ console.log(formatDate(year2,month2,day2))
 
 
 /*
@@ -31,7 +31,7 @@ import { formatDate, selectDogType, Animal, selectAnyType } from "./Common10.js"
  const year3 = 2022
  const month3 = 8
  const day3 = 40
- formatDate(year3,month3,day3)
+ console.log(formatDate(year3,month3,day3))
 
 
 /*
