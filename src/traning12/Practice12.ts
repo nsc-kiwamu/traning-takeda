@@ -139,6 +139,8 @@ else {
 */
 const users4:gambler[] = [{name:'鈴木', coin:0, matchValue:[0]}, {name:'上野', coin:0, matchValue:[0]},
                           {name:'田中', coin:0, matchValue:[0]}, {name:'岡田', coin:0, matchValue:[0]}] 
+// max値を設定
+let max: number = 0
 
 for (let user of users4) {
   // 1回だけ振る
@@ -147,17 +149,32 @@ for (let user of users4) {
   console.log(`${user.name}さんのサイコロの結果は、${value}です。`)
   // 結果の格納
   user.matchValue = [value]
+
+  // maxよりも大きければ、maxに値を代入する
+  if (max < value){
+    max = value
+    user.matchValue = [max]
+  }
 }
+ console.log(`サイコロの最大値は${max}`)
 
  // 引き分けの処理
-if () {
+if (users4[0].matchValue[0] === users4[1].matchValue[0] &&
+    users4[0].matchValue[0] === users4[2].matchValue[0] &&
+    users4[0].matchValue[0] === users4[3].matchValue[0] ) {
   console.log(`引き分けです\r\n`)
+ }
+  else {
 
  // 勝ち負けを判定する
-for (){
+ // 最大値maxと同じであれば勝つ
+for (let i = 0; i < users4.length; i++){
+  if(users4[i].matchValue[0] === max){
+    console.log(`${users4[i].name}さんの勝ちです\r\n`)
+  }
+ }
+}
 
-}
-}
 
 /*
   5. サンプルを参考に以下の条件を満たすように呼び出しをすること。.OK
