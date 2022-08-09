@@ -29,23 +29,24 @@ function getPrime(){
 /*
   2. 要素数10個で値域が1～50までのランダムな値をもつnumber型の配列を作成し、素数をコンソール出力するプログラムを作成する
 */
+ 
+
+ let n,i;
  const sample = makeRandomList(10,1,50)
-// const samplearray: number = makeRandomList(10,1,50)
+ console.log(`素数を出力する前:${sample}`)
 
-function sampleMake(){
-  let n;
+ function sampleSosu() {
+ for(n=2; n < sample.length; n++){
+    for(i=2; i<n; i++){
+        if(n%i == 0) // n÷iの余りがなければ、
+               break; // 終了
+       }
+    if(n == i) // nとiが同じであれば、console.logに出力する
+        console.log(n);
+      }
+    }
 
-  for(let i = sample -1; i >=){
-      for(i = 2; i < n; i++){
-          if(n % i == 0)
-                break;
-          }
-      if(n == i)
-          console.log(n);
-  }
-}
-
-sampleMake();
+ sampleSosu();
 
 
 
