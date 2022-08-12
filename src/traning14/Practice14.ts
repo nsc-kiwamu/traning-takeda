@@ -24,6 +24,20 @@ function getPrime(){
 
  getPrime(); // 上記の処理、関数を呼び出す
 
+ /**
+  * 素数の判断をする
+  * 素数の場合は引数で受け取った値を返却
+  * 素数でない場合はundedefindを返却
+  * @param target 素数判定したい値
+  * @return 素数判定結果
+  */
+ function judgeSosuu(target: number):number | undefined {
+  let retNum:number | undefined
+
+  // 素数判定の処理を追加する
+
+  return retNum
+ }
 
 
 /*
