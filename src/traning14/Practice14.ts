@@ -9,22 +9,14 @@ import { makeRandomList } from "../traning13/Common13";
 // 上記サイトを参考にしました。
 
 function getPrime(){
-    // let n,i;
     const num = 100;
 
     for(let n=2; n < num; n++){ // nが2以上の時num(100)まで繰り返す。
-      let ans = judgeSosuu(num)
+      let ans = judgeSosuu(0)
 
       if (typeof ans === 'number') {
         console.log(`${ans}は素数です`)
       }
-        // for(let i=2; i<n; i++){
-        //     if(n%i == 0){ // n÷iの余りがなければ、
-        //           break; // 終了
-        //     }
-        // if(n == i) {// nとiが同じであれば、console.logに出力する
-        //     console.log(n);
-        // }
     }
 }
 
@@ -39,34 +31,37 @@ function getPrime(){
   */
  function judgeSosuu(target: number):number | undefined {
   let retNum:number | undefined
-
+  let n,i;
   // 素数判定の処理を追加する
+  for(let i=2; i<n; i++){
+        if(n%i == 0){ // n÷iの余りがなければ、
+              break; // 終了
+        }
+    if(n == i) {// nとiが同じであれば、素数
+    }
 
   return retNum
  }
-
+}
 
 /*
   2. 要素数10個で値域が1～50までのランダムな値をもつnumber型の配列を作成し、素数をコンソール出力するプログラムを作成する
 */
  
-
- let n,i;
+console.log('=====問題2=====')
+ let n;
  const sample = makeRandomList(10,1,50)
  console.log(`素数を出力する前:${sample}`)
 
  function sampleSosu() {
  for(n=2; n < sample.length; n++){
-  let ans = judgeSosuu(sample.length)
-    // for(i=2; i<n; i++){
-    //     if(n%i == 0) { // n÷iの余りがなければ、
-    //            break; // 終了
-    //    }
-    // }
-    // if(n == i) {// nとiが同じであれば、console.logに出力する
-    //     console.log(n);
-    // }
+  let ans = judgeSosuu(0)
+  console.log(sample + 'テスト')
+
+  if (typeof ans === 'number') {
+    console.log(`${ans}は素数です`)
   }
+ }
 }
 
  sampleSosu();
