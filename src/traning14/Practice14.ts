@@ -37,13 +37,36 @@ function getPrime(){
   // 素数判定の処理を追加する
   for(let i=2; i < target; i++){
         if(target%i == 0){ // target(受け取った値）÷iの余りがなければ、
-              break; // 終了
+              // break; // 終了
         }
     if(target == i) { // target(受け取った値）とiが同じであれば、素数
     }
   }
-  return retNum
+  return target
 }
+
+ /**
+  * 素数の判断をする
+  * 素数の場合はコンソール出力する
+  * @param target 素数判定したい値
+  */
+  function judgeSosuuVoid(target: number) {
+    // 0と1が渡された場合は素数ではないため処理終了
+    if (target === 0 || target === 1) {
+      return
+    }
+  
+    // 素数判定の処理を追加する
+    for (let i=2; i < target; i++) {
+      if (target % i === 0) {
+        return
+      }
+    }
+
+    // 最後まで割り切れなくて残ったので素数
+    console.log(`${target}は素数です`)
+  }
+  
 
 /*
   2. 要素数10個で値域が1～50までのランダムな値をもつnumber型の配列を作成し、素数をコンソール出力するプログラムを作成する
