@@ -12,9 +12,8 @@ console.log('=====問題1=====')
 function getPrime(){
     let num = new Array(100);
 
-    for(let i=0; i < num.length; i++){ // iが2以上の時num(100)まで繰り返す。
-      let ans = judgeSosuu(i) // judgeSosuuに素数判断したい値を渡す
-// console.log(i + 'テスト')
+    for(let i=2; i < num.length; i++){ // iが2以上の時num(100)まで繰り返す。
+      let ans = judgeSosuuVoid(i) // judgeSosuuに素数判断したい値を渡す
 
       if (typeof ans === 'number') { // さっき代入した値を型判定する
         console.log(`${ans}は素数です`)
@@ -76,10 +75,24 @@ function getPrime(){
 //  const sample = makeRandomList(10,1,50)
 //  console.log(`素数を出力する前:${sample}`)
 
-//  function sampleSosu() {
-//       // let i=2; i < sample.length; i++　元
-//      for(let i=0; i < sample.length; i++){ // sampleが2以上の時は、繰り返す
-//        let ans = judgeSosuu(i)
+//  function getSosuu() {
+//       // let i=0; i < sample.length; i++　元
+//      for(let i=sample.length-2; i>2; i++){ // sampleが2以上の時は、繰り返す
+//       for (let j = 2; j < i; j++) { 
+
+//         let ans = judgeSosuuVoid(i)
+
+//        if (typeof ans === 'number') {
+//         console.log(`${ans}は素数です`)
+//        }
+//      }
+//   }
+//  }
+//  getSosuu();
+
+// ここまで
+
+//        let ans = judgeSosuuVoid(i)
 // // console.log(i + 'テスト')
 
 //        if (typeof ans === 'number') {
@@ -88,7 +101,7 @@ function getPrime(){
 //      }
 //  }
 
-//  sampleSosu();
+//  getSosuu();
 
 
 
