@@ -36,9 +36,7 @@ function getPrime(){
   // 素数判定の処理を追加する
   for(let i=2; i < target; i++){ // 2から渡された数まで繰り返す。
         if(target % i == 0){ // target(受け取った値）÷iの余りがなければ、
-              break; // 終了
-        }
-        else if(retNum){
+          return(retNum)   
     }
   }
   return target
@@ -89,37 +87,22 @@ function getPrime(){
   2. 要素数10個で値域が1～50までのランダムな値をもつnumber型の配列を作成し、素数をコンソール出力するプログラムを作成する
 */
  
-//  console.log('=====問題2=====')
-//  const sample = makeRandomList(10,1,50)
-//  console.log(`素数を出力する前:${sample}`)
+ console.log('=====問題2=====')
+ function getSosuu() {
+ const sample = makeRandomList(10,1,50)
 
-//  function getSosuu() {
-//       // let i=0; i < sample.length; i++　元
-//      for(let i=sample.length-2; i>2; i++){ // sampleが2以上の時は、繰り返す
-//       for (let j = 2; j < i; j++) { 
+     for(let i=2; i < sample.length; i++){ // sampleが2以上の時は、繰り返す
+         let ans = judgeSosuu(i)
 
-//         let ans = judgeSosuuVoid(i)
+       if (typeof ans === 'number') {
+        console.log(`${ans}は素数です`)
+       }
+     }
+  }
+ 
+ getSosuu();
 
-//        if (typeof ans === 'number') {
-//         console.log(`${ans}は素数です`)
-//        }
-//      }
-//   }
-//  }
-//  getSosuu();
 
-// ここまで
-
-//        let ans = judgeSosuuVoid(i)
-// // console.log(i + 'テスト')
-
-//        if (typeof ans === 'number') {
-//         console.log(`${ans}は素数です`)
-//        }
-//      }
-//  }
-
-//  getSosuu();
 
 
 
