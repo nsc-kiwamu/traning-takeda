@@ -11,6 +11,7 @@
  sample05.set("ぶどう", "300円")
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
  // MAPの宣言と値の設定(key:string, value:string)
 
  const practice05Map  = new Map<string, number>()
@@ -18,6 +19,15 @@
  practice05Map.set('ノート', 100)
  practice05Map.set('色鉛筆', 300)
  
+=======
+ console.log(`りんごは${sample05.get("りんご")}です`)
+ console.log(`ももは${sample05.get("もも")}です`)
+ console.log(`ぶどうは${sample05.get("ぶどう")}です`)
+
+ for (const [key, value] of sample05) {
+  console.log(`${key}は${value}です`)
+}
+>>>>>>> Stashed changes
  
  // MAPの中身を表示(keyが特定できる場合)
  console.log(`絵本${practice05Map.get('絵本')}です`)

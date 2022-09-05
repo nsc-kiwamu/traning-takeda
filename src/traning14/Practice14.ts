@@ -17,7 +17,7 @@ function getPrime(){
 
       if (typeof ans === 'number') { // さっき代入した値を型判定する
         console.log(`${ans}は素数です`)
-      // }
+      }
     }
 }
 
@@ -38,14 +38,30 @@ function getPrime(){
         if(target % i == 0){ // target(受け取った値）÷iの余りがなければ、
               break; // 終了
         }
-    if(target % i === 0) { // target(受け取った値）
-    }
-    else if(retNum){
+        else if(retNum){
     }
   }
   return target
 }
-}
+
+
+// 元
+// function judgeSosuu(target: number):number | undefined {
+//   let retNum:number | undefined
+
+//   // 素数判定の処理を追加する
+//   for(let i=2; i < target; i++){ // 2から渡された数まで繰り返す。
+//         if(target % i == 0){ // target(受け取った値）÷iの余りがなければ、
+//               break; // 終了
+//         }
+//     if(target % i === 0) { // target(受け取った値）
+//     }
+//     else if(retNum){
+//     }
+//   }
+//   return target
+// }
+
  /**
   * 素数の判断をする
   * 素数の場合はコンソール出力する
