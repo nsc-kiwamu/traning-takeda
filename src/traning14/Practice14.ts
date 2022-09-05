@@ -13,11 +13,11 @@ function getPrime(){
     let num = new Array(100);
 
     for(let i=2; i < num.length; i++){ // iが2以上の時num(100)まで繰り返す。
-      let ans = judgeSosuuVoid(i) // judgeSosuuに素数判断したい値を渡す
+      let ans = judgeSosuu(i) // judgeSosuuに素数判断したい値を渡す
 
       if (typeof ans === 'number') { // さっき代入した値を型判定する
         console.log(`${ans}は素数です`)
-      }
+      // }
     }
 }
 
@@ -34,16 +34,18 @@ function getPrime(){
   let retNum:number | undefined
 
   // 素数判定の処理を追加する
-  for(let i=2; i < target; i++){
-        if(target%i == 0){ // target(受け取った値）÷iの余りがなければ、
-              // break; // 終了
+  for(let i=2; i < target; i++){ // 2から渡された数まで繰り返す。
+        if(target % i == 0){ // target(受け取った値）÷iの余りがなければ、
+              break; // 終了
         }
-    if(target == i) { // target(受け取った値）とiが同じであれば、素数
+    if(target % i === 0) { // target(受け取った値）
+    }
+    else if(retNum){
     }
   }
   return target
 }
-
+}
  /**
   * 素数の判断をする
   * 素数の場合はコンソール出力する
