@@ -1,4 +1,5 @@
 import { makeRandom } from "../traning12/Common12.js"
+import { makeRandomList } from "../traning14/Practice14.js"
 
 
 
