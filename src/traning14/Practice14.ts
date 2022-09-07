@@ -88,7 +88,7 @@ import { makeRandomList } from "../traning13/Common13";
 */
  
  console.log('=====問題2=====')
- export function getSosuu() {
+ function getSosuu() {
  const sample = makeRandomList(10,1,50)
 
      for(let i=2; i < sample.length; i++){ // sampleが2以上の時は、繰り返す
