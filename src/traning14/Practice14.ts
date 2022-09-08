@@ -1,4 +1,5 @@
-import { makeRandomList } from "../traning13/Common13";
+import { makeRandomList } from "../traning13/Common13.js"
+
 /*
  アルゴリズム(素数判定)
 
@@ -90,10 +91,10 @@ import { makeRandomList } from "../traning13/Common13";
  console.log('=====問題2=====')
  function getSosuu() {
  const sample = makeRandomList(10,1,50)
+ console.log(`素数判定前:${makeRandomList}`)
 
      for(let i=2; i < sample.length; i++){ // sampleが2以上の時は、繰り返す
          let ans = judgeSosuu(i)
-console.log(i + 'テスト')
        if (typeof ans === 'number') {
         console.log(`${ans}は素数です`)
        }
