@@ -77,7 +77,7 @@ function getPrime(){
  const sample = makeRandomList(10,1,50)
  console.log(`素数判定前:${sample}`)
 
-     for(let i=2; i < sample.length; i++){ // sampleが2以上の時は、繰り返す
+     for(let i=0; i < sample.length; i++){ // sampleが2以上の時は、繰り返す
          let ans = judgeSosuu(sample[i])
        if (typeof ans === 'number') {
         console.log(`${ans}は素数です`)
