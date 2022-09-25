@@ -30,13 +30,13 @@ if (users[0].matchValue < users[1].matchValue) {
 }
 
 
+
 /*
   2. サンプルを参考に以下の条件を満たすように呼び出しをすること。 .OK
   　対戦者:2名
   　勝負方法:サイコロを2回振って合計が大きな数値の出た方の勝ち
   　勝負結果:「～さんの勝ちです」か「引き分けです」を出力する
 */
-
 // 対戦者の作成
 console.log('問題2')
 const users2:gambler[] = [{name:'山田', coin:0, matchValue:[1,2]}, {name:'鈴木', coin:0, matchValue:[1,2]}]
@@ -74,6 +74,7 @@ if (users2[0].matchValue[0] > users2[1].matchValue[0]) {
 // 対戦者の作成
 console.log('問題3')
 const users3:gambler[] = [{name:'田中', coin:0, matchValue:[1,2,3]}, {name:'林', coin:0, matchValue:[1,2,3]}] 
+
 // サイコロを振って結果を格納する
 for (let user of users3) {
     // サイコロを振る
@@ -84,7 +85,6 @@ for (let user of users3) {
     // 結果を格納する
     user.matchValue = [value,value2,value3]
 }
-
 
 
 // サイコロを振って結果で勝負する
@@ -136,6 +136,7 @@ if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
     console.log('引き分けです\r\n')
 }
 
+
 /*
   4. サンプルを参考に以下の条件を満たすように呼び出しをすること。
   　対戦者:4名
@@ -144,6 +145,7 @@ if (users3[0].matchValue[0] > users3[1].matchValue[0] &&
   　　例)Aさん:1、Bさん:1、Cさん:5、Dさん5 →　「Cさんの勝ちです」「Dさんの勝ちです」と出すか「CさんとDさんの勝ちです」と出す
   　　　　全員が同じ値になった場合のみ「引き分けです」を出す
 */
+
 // 対戦者の作成
 console.log('問題4')
 const users4:gambler[] = [{name:'上野', coin:0, matchValue:[0]}, {name:'高橋', coin:0, matchValue:[0]},
@@ -185,6 +187,7 @@ for (let i = 0; i < users4.length; i++) { // 4人分繰り返す
 
 }
 
+
 /*
   5. サンプルを参考に以下の条件を満たすように呼び出しをすること。.OK
   　対戦者:2名
@@ -210,6 +213,8 @@ if (users5[0].matchValue[0] > users5[1].matchValue[0]) {
 } else {
     console.log('引き分けです\r\n')
 }
+
+
 
 /*※1 「Ctrl + @」でターミナルを開き以下を実行
   yarn tsc 

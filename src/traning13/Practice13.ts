@@ -1,4 +1,4 @@
-import { makeRandomList } from "./Common13.js"
+import { makeRandomList} from "./Common13.js"
 /*
  アルゴリズム(バブルソート)
 
